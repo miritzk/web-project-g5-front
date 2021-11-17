@@ -1,0 +1,18 @@
+:root{
+    --pale_pink: #fae5df;
+    --peach: #f5cac2;
+    --coral: #ed7966;
+    --navy: #141850;
+}
+
+#menu {
+    background-color: var(--peach);
+}
+
+.social-wrap {
+    display:flex;
+    margin-right: 10px;
+}
+.social-wrap a {
+    margin-right: 5px;
+}
