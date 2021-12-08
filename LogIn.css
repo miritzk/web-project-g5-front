@@ -1,0 +1,123 @@
+.content{
+    overflow: hidden;
+    float: none;
+    height: 800px;
+    transform: translate(10%, 10%);
+    transform: translateX(20%, 20%);
+    border-radius: 2px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 550px;
+
+}
+
+.content form {
+    width: 600px;
+    display: flex;
+    margin: 50px 300px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    vertical-align: middle;
+    text-align: center;
+    background-image: url(background.jpg);
+    background-size: 1500px;
+
+
+}
+
+.content form .login {
+    display: block;
+    width: 400px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    text-align: left;
+}
+
+
+.content form .psw {
+    display: block;
+    width: 350px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    text-align: left;
+}
+
+
+.content form .Email {
+    display: block;
+    width: 350px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    text-align: left;
+}
+
+
+
+/*todo chnge*/
+.content form hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/*todo chnge*/
+.content label{
+    text-align: center;
+}
+
+.content form .Loginbtn {
+    padding: 14px 20px;
+    margin: 8px 6px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    text-align: center;
+    font-size: 20px;
+    font-family: Rubik,sans-serif;
+
+}
+
+
+
+
+.content form .container .container_form{
+    background-color: white;
+    text-align: center;
+    padding: 1px;
+}
+
+
+.content form .Loginbtn:hover {
+    background-color: #ed7966;
+}
+
+.content form .Loginbtn {
+    background-color: white;
+    background: #f5cac2;
+    color: white;
+    text-align: center;
+    width: 48%;
+    padding: 14px 20px;
+}
+
+/*todo chnge*/
+.content .container {
+    /*padding: 16px;*/
+    background-color: white;
+
+}
+
+body{
+    background-color: #fae5df;
+}
