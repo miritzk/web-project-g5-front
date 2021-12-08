@@ -5,14 +5,29 @@
     --navy: #141850;
 }
 
-#menu {
-    background-color: var(--peach);
+.navbar-brand img {
+    border-radius: 15px;
 }
 
 .social-wrap {
-    display:flex;
+    display: flex;
     margin-right: 10px;
 }
+
 .social-wrap a {
     margin-right: 5px;
 }
+
+/* .sign-in-button{
+    color: rgba(0,0,0,.55);
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    text-decoration: none;
+    min-width: 15px;
+    box-sizing: unset;
+} */
+
+/* .sign-in-button:hover{
+    color: var(--bs-gray-dark);
+} */

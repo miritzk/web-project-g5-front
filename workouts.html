@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="workouts.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <title>Workouts</title>
+</head>
+<body>
+    <!-- menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="images/pilates.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+              Michal Pilates
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+              <a class="nav-link" href="homepage.html">Home</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Prices</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="workouts.html">Workouts</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="calendar.html">Calendar</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Sign In</a>
+              </li>
+          </ul>
+          </div>
+      </div>
+    </nav>
+    <!-- end menu -->
+
+      <!-- Workout Types -->
+      <div class="head">
+        <h2>Workout Types</h2>
+      </div>
+
+      <div class="grid">
+         
+         <div class="workout" id="w_1">
+              <h3>Classical Pilates</h3>
+              <p>Classical Pilates incorporates both mat and apparatus work. Classical has a traditional order, which includes transitions between exercises, that makes this type of Pilates good for practitioners who thrive on structure and predictability in their workouts.
+                Another important distinction between classical Pilates and other types is the resting position. Classical Pilates focuses on more of a posterior pelvic tilt (hips tilt toward your back), as well as a few other postural preferences at the head, neck and shoulders.</p>
+              <img src="images/classical_pilates.png" alt="">
+        </div>
+
+        <div class="workout" id="w_2">
+            <h3>Mat Pilates</h3>
+            <p>The exercises in mat Pilates are performed with your body and a yoga mat in lieu of machines and equipment. Mat Pilates focuses on your core, making it beneficial for those with back pain. The movements in mat Pilates are based on the mat exercises in the classical Pilates system.</p>
+            <img src="images/mat_pilates.jpg" alt="">
+        </div>
+
+        <div class="workout" id="w_3">
+            <h3>Reformer Pilates</h3>
+            <p>This type of Pilates offers similar core-strengthening benefits of mat Pilates, but uses a reformer, a machine with a bed-like frame, a platform and a set of springs. Many of the exercises on the reformer are the same as mat exercises but performed with the added resistance of the reformer's springs, straps and ropes. Ultimately, you can better customize fitness goals such as improving postural alignment and coordination than you can with mat Pilates. Since reformer Pilates classes tend to be more intense than mat classes, they might be the better choice for those already well-versed in mat Pilates and are looking to burn more calories and lose weight.</p>
+            <img src="images/reformer_pilates.jpg" alt="">
+        </div>
+
+        <div class="workout" id="w_4">
+            <h3>Prenatal Pilates</h3>
+            <p>Aside from being low-impact and keeping your heart rate steady, Pilates is also considered a great choice for pregnant women because its exercises can be adapted to suit you as you progress through the different stages of pregnancy.
+              Inversions, for instance, can be a no-go for women in their first trimester because of feelings of dizziness. But a good pregnancy class should avoid these, or offer modifications when it comes to any inversion exercises.</p>
+            <img src="images/prenatal_pilates.jpg" alt="">
+        </div>
+
+      </div>
+
+      <div class="prices_btn">
+        <button id="prices_btn" href="#">Prices</button>
+      </div>
+
+      <!-- footer -->
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <span class="text-muted">&copy; 2021 Michal Pilates</span>
+        </div>
+        <div class="social-wrap">
+            <div><a class="text-muted" href="https://www.facebook.com/">
+              <img src="images/facebook.svg" alt="" width="30" height="24">
+            </a></div>
+            <div><a class="text-muted" href="https://www.instagram.com/">
+              <img src="images/instagram.svg" alt="" width="30" height="24">
+            </a></div>
+            <div ><a class="text-muted" href="https://www.youtube.com/">
+              <img src="images/youtube.svg" alt="" width="30" height="24">
+            </a></div>
+      </div>
+      </footer>
+      <!-- end footer -->
+</body>
+</html>

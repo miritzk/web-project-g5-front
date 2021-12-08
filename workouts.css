@@ -1,0 +1,80 @@
+.head {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* body {
+    background-color: ;
+} */
+
+.grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "w_1 w_1 w_1 w_2 w_2 w_2"
+    "w_3 w_3 w_3 w_4 w_4 w_4";
+}
+
+h3 {
+    text-align: center;
+}
+
+.workout img {
+    max-width: 100%;
+    max-height: 100%; 
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.workout {
+    /* border: solid; */
+    padding: 10px;
+    border-radius: 15px;
+    background-color: var(--peach);
+    color: var(--navy);
+    box-shadow: 5px 5px rgba(77, 60, 39, 0.5);
+}
+
+/* .workout:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+} */
+
+#w_1 {
+    grid-area: w_1;
+    margin-left: 25px;
+}
+
+#w_2 {
+    grid-area: w_2;
+    margin-right: 25px;
+}
+
+#w_3 {
+    grid-area: w_3;
+    margin-left: 25px;
+}
+
+#w_4 {
+    grid-area: w_4;
+    margin-right: 25px;
+}
+
+.prices_btn {
+    text-align: center;
+    margin: 25px;
+}
+
+#prices_btn {
+    border: unset;
+    padding: 7px 50px;
+    border-radius: 5px;
+    background-color: var(--coral);
+    color: white;
+    /* font-weight: bold; */
+}
+
+#prices_btn:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
