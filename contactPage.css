@@ -1,0 +1,85 @@
+@import url();
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact_grid
+{
+    grid-gap:20px;
+    background-color: var(--pale_pink);
+    /* position: relative; */
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: grid;
+    grid-template-areas: 
+    'contact_header contact_header form form'
+    'address address form form'
+    'phone phone form form'
+    'email email form form'
+    'map map map map';
+    
+
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* background-size: cover; */
+}
+.contact_grid .content
+{
+    max-width: 800px;
+    text-align:center;
+}
+.contact_grid .content h2
+{
+    font-size: 36px;
+    font-weight:500 ;
+    color: var(--navy) ;
+    text-align: center;
+}
+
+.contact_grid .content p
+ {
+    font-weight:300 ;
+    color: var(--navy) ;
+    text-align: center;
+}
+
+#contact_header {
+    grid-area: contact_header;
+}
+
+#address {
+    grid-area: address;
+    border: solid;
+    border-radius: 20px;
+}
+
+#phone {
+    grid-area: phone;
+    border: solid;
+    border-radius: 20px;
+}
+
+#email {
+    grid-area: email;
+    border: solid;
+    border-radius: 20px;
+}
+
+#form {
+    grid-area: form
+}
+
+#map {
+    grid-area: map;
+    position: relative;
+    left: 400px;
+   bottom:200px
+
+    
+    
+}
