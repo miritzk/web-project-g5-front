@@ -1,14 +1,29 @@
 :root{
-    --yellow: rgba(251,243,224);
-    --peach: rgba(254,228,215);
-    --pink: rgba(242,213,207);
-    --grey: rgba(170,173,178);
+    --yellow: rgb(248, 232, 195);
+    --peach: rgb(253, 211, 190);
+    --pink: rgb(243, 177, 164);
+    --grey: rgb(155, 158, 163);
     --green: rgba(145,163,163);
     --mouse: rgba(225,231,231);
+    --coral: #ed7966;
 }
 
 body {
     background-color: var(--mouse);
+}
+
+.btn_general {
+    border: unset;
+    padding: 7px 50px;
+    border-radius: 5px;
+    background-color: var(--coral);
+    color: white;
+    /* font-weight: bold; */
+}
+
+.btn_general:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: var(--pink);
 }
 
 .navbar-brand img {
