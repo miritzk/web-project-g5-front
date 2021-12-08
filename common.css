@@ -7,6 +7,10 @@
     --mouse: rgba(225,231,231);
 }
 
+body {
+    background-color: var(--mouse);
+}
+
 .navbar-brand img {
     border-radius: 15px;
 }
