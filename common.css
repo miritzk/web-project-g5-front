@@ -1,8 +1,10 @@
 :root{
-    --pale_pink: #fae5df;
-    --peach: #f5cac2;
-    --coral: #ed7966;
-    --navy: #141850;
+    --yellow: rgba(251,243,224);
+    --peach: rgba(254,228,215);
+    --pink: rgba(242,213,207);
+    --grey: rgba(170,173,178);
+    --green: rgba(145,163,163);
+    --mouse: rgba(225,231,231);
 }
 
 .navbar-brand img {
