@@ -1,0 +1,177 @@
+
+.content {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #927e7b;
+    padding-top: 20px;
+        background-image: url(background.jpg);
+    background-size: 1500px;
+
+
+}
+.UserHeader {
+    color: black;
+    text-align: center;
+
+}
+
+.content .profile_general_container {
+    display: grid;
+    grid-template-areas:
+                'tab_content menu1';
+    grid-template-columns: auto 250px;
+    grid-template-rows: auto auto;
+    text-align: center;
+    height: 700px;
+    background-image: url(background.jpg);
+    background-size: 1500px;
+
+
+}
+
+.content .menuTabs {
+    grid-area: menu1;
+    background-image: url(background.jpg);
+    background-size: 5000px;
+
+}
+
+.content .profile_general_container .menuTabs .tab {
+    background-color: #c9afa7;
+    border-radius: 8px;
+    width: 150px;
+    height: 240px;
+    margin: 200px 40px;
+
+
+}
+
+
+.content .tabcontent {
+    grid-area: tab_content;
+    align-items: center;
+    padding: 0px 200px;
+    width: 600px;
+    height: 440px;
+    margin: 120px 100px;
+    border-radius: 10px;
+    border: 1px solid #c9afa7;
+
+
+}
+
+.content .tabscontent {
+    background-image: url(background.jpg);
+    background-size: 1500px;
+
+}
+
+.content .tabcontent .tab {
+    border-radius: 10px;
+    width: 150px;
+    height: 240px;
+    margin: 200px 40px;
+
+
+}
+
+
+.content .menuTabs .tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 30px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    font-size: 18px;
+    color: #fdf7f5;
+    /*border-radius: 10px;*/
+
+}
+
+
+/* Change background color of buttons on hover */
+.content .menuTabs .tab button:hover {
+    background-color: #ad948c;
+}
+
+/* Create an active/current "tab button" class */
+.content .menuTabs .tab button.active {
+    background-color: #ad948c;
+}
+
+.content .profile_general_container .tabscontent .tabcontent h3 {
+    margin: 10px;
+    padding: 10px;
+    color: #927e7b;
+    justify-content: space-evenly;
+    text-align: center;
+    position: center;
+}
+
+.content .profile_general_container .tabscontent .tabcontent hr {
+    border: 1px solid #c9afa7;
+}
+
+
+.content .tabcontent_grid_container {
+
+    display: grid;
+    grid-template-areas:
+                'bottom bottom'
+                'update details';
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    text-align: center;
+
+}
+
+.content .divBut {
+    grid-area: bottom;
+
+}
+
+.content .divDet {
+    grid-area: details;
+
+}
+
+.content .divUp {
+    grid-area: update;
+
+
+}
+
+.content .profile_general_container .tablinks{
+    font-family: Rubik, sans-serif;
+}
+
+
+.content .profile_general_container .tabscontent .tabcontent .upButton {
+    margin: 10px;
+    padding: 10px;
+    justify-content: space-evenly;
+    text-align: center;
+    color: #fdf7f5;
+    background-color: #d7c4bd;
+    border: none;
+    border-radius: 10px;
+}
+
+.content .profile_general_container .tabscontent .tabcontent .upButton:hover {
+    background-color: #ad948c;
+}
+
+.content .profile_general_container .tabscontent .tabcontent .tabcontent_grid_container .divUp .forms .container .update {
+    display: block;
+    width: 250px;
+    height: 20px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
