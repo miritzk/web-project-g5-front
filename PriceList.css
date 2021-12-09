@@ -1,20 +1,36 @@
-.content{
-    grid-area: main;
-    padding: 16px;
-    text-align: center;
+.price_list {
+    color: grey;
 }
 
-.content .price_list_written p{
-    color: grey;
+.price_list form {
     line-height: 2;
     font-size: 20px;
 }
 
-
-.content form .container .container_form{
-    background-color: white;
-    text-align: center;
-    padding: 1px;
+.price_list form input[type="radio"]:after {
+    width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: white;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 1px solid var(--coral);
 }
 
-
+.price_list form input[type="radio"]:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: var(--coral);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid var(--coral);
+}

@@ -1,16 +1,33 @@
-:root{
-    --yellow: rgb(248, 232, 195);
+:root {
+    --yellow: rgb(252, 242, 218);
     --peach: rgb(253, 211, 190);
     --pink: rgb(242, 213, 207);
     --grey: rgb(155, 158, 163);
-    --green: rgba(145,163,163);
-    --mouse: rgba(225,231,231);
+    --green: rgba(145, 163, 163);
+    --mouse: rgba(225, 231, 231);
     --coral: #ed7966;
     --blue: #BFD8D5;
+    --mint: #E4EFE7;
+    --mint_light: #f5f8f6e0;
+    --beigh: #FBF7F0;
 }
 
 body {
-    background-color: var(--blue);
+    background-color: var(--mint);
+}
+
+.page_content {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    padding: 50px 100px;
+}
+
+.page_content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .btn_general {

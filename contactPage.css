@@ -1,44 +1,30 @@
 @import url();
 
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
-.contact_grid
-{
-    grid-gap: 20px;
+.contact_grid {
     background-color: var(--pale_pink);
-    /* position: relative; */
-    min-height: 100vh;
-    padding: 50px 100px;
     display: grid;
-    grid-template-areas: 
-    'contact_header contact_header map map'
-    'address address map map'
-    'phone phone map map'
-    'email email map map'
-    'form form form form';
-}
-.contact_grid .content
-{
-    /* max-width: 800px; */
-    text-align:center;
-}
-.contact_grid .content h2
-{
-    font-size: 36px;
-    font-weight:500 ;
-    color: var(--navy) ;
-    text-align: center;
+    grid-gap: 20px;
+    grid-template-areas:
+        'contact_header contact_header contact_header contact_header'
+        'address address map map'
+        'phone phone map map'
+        'email email map map'
+        'form form map map';
 }
 
-.contact_grid .content p
- {
-    font-weight:300 ;
-    color: var(--navy) ;
+.contact_grid .content {
+    text-align: center;
+    justify-content: center;
+}
+
+.contact_grid .content p {
+    font-weight: 300;
     text-align: center;
 }
 
@@ -46,39 +32,71 @@
     grid-area: contact_header;
 }
 
-#address {
-    grid-area: address;
-    /* border: solid; */
-    border-radius: 20px;
-    background-color: var(--yellow);
-    box-shadow: 5px 5px rgb(77 60 39 / 50%);
+#contact_header h2 {
+    grid-area: contact_header;
+    margin-bottom: 30px;
 }
 
-#phone {
-    grid-area: phone;
-    /* border: solid; */
+.contact_grid .content.c1 {
     border-radius: 20px;
-    background-color: var(--yellow);
+    background-color: var(--beigh);
     box-shadow: 5px 5px rgb(77 60 39 / 50%);
-}
-
-#email {
-    grid-area: email;
-    /* border: solid; */
-    border-radius: 20px;
-    background-color: var(--yellow);
-    box-shadow: 5px 5px rgb(77 60 39 / 50%);
-}
-
-#form {
-    grid-area: form;
-    /* border: solid; */
-    background-color: var(--pink);
-    border-radius: 20px;
-    box-shadow: 5px 5px rgb(77 60 39 / 50%);
-    padding: 5px;
+    padding-top: 10px;
 }
 
 #map {
     grid-area: map;
 }
+
+#address {
+    grid-area: address;
+}
+
+#phone {
+    grid-area: phone;
+}
+
+#email {
+    grid-area: email;
+}
+
+#form {
+    grid-area: form;
+    background-color: var(--pink);
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    display: grid;
+    grid-gap: 10px;
+    /* grid-template-areas:
+        'message_header message_header'
+        'user_full_name user_email'
+        'user_message user_message'
+        'send_btn send_btn'; */
+} 
+
+.inputBox {
+    padding: 5px;
+}
+
+#input_full_name {
+    padding-left: 5px;
+}
+
+#input_email {
+    width: 229px;
+    padding-left: 5px;
+}
+
+#input_message {
+    width: 278px;
+    height: 100px;
+    padding: 5px;
+}
+
+#send_btn {
+    grid-area: send_btn;
+    text-align: center;
+}
+
+

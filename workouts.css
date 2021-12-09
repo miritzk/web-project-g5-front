@@ -1,8 +1,8 @@
-.head {
+/* .head {
     text-align: center;
     padding: 20px;
     margin-bottom: 20px;
-}
+} */
 
 /* body {
     background-color: ;
@@ -65,16 +65,15 @@ h3 {
     margin: 25px;
 }
 
-#prices_btn {
+/* #prices_btn {
     border: unset;
     padding: 7px 50px;
     border-radius: 5px;
     background-color: var(--coral);
     color: white;
-    /* font-weight: bold; */
-}
+} */
 
-#prices_btn:hover {
+/* #prices_btn:hover {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-}
+} */
 
