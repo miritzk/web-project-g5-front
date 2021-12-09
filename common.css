@@ -1,15 +1,16 @@
 :root{
     --yellow: rgb(248, 232, 195);
     --peach: rgb(253, 211, 190);
-    --pink: rgb(243, 177, 164);
+    --pink: rgb(242, 213, 207);
     --grey: rgb(155, 158, 163);
     --green: rgba(145,163,163);
     --mouse: rgba(225,231,231);
     --coral: #ed7966;
+    --blue: #BFD8D5;
 }
 
 body {
-    background-color: var(--mouse);
+    background-color: var(--blue);
 }
 
 .btn_general {

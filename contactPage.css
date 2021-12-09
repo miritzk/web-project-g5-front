@@ -9,28 +9,22 @@
 
 .contact_grid
 {
-    grid-gap:20px;
+    grid-gap: 20px;
     background-color: var(--pale_pink);
     /* position: relative; */
     min-height: 100vh;
     padding: 50px 100px;
     display: grid;
     grid-template-areas: 
-    'contact_header contact_header form form'
-    'address address form form'
-    'phone phone form form'
-    'email email form form'
-    'map map map map';
-    
-
-    /* display: flex; */
-    /* justify-content: center; */
-    /* flex-direction: column; */
-    /* background-size: cover; */
+    'contact_header contact_header map map'
+    'address address map map'
+    'phone phone map map'
+    'email email map map'
+    'form form form form';
 }
 .contact_grid .content
 {
-    max-width: 800px;
+    /* max-width: 800px; */
     text-align:center;
 }
 .contact_grid .content h2
@@ -54,32 +48,37 @@
 
 #address {
     grid-area: address;
-    border: solid;
+    /* border: solid; */
     border-radius: 20px;
+    background-color: var(--yellow);
+    box-shadow: 5px 5px rgb(77 60 39 / 50%);
 }
 
 #phone {
     grid-area: phone;
-    border: solid;
+    /* border: solid; */
     border-radius: 20px;
+    background-color: var(--yellow);
+    box-shadow: 5px 5px rgb(77 60 39 / 50%);
 }
 
 #email {
     grid-area: email;
-    border: solid;
+    /* border: solid; */
     border-radius: 20px;
+    background-color: var(--yellow);
+    box-shadow: 5px 5px rgb(77 60 39 / 50%);
 }
 
 #form {
-    grid-area: form
+    grid-area: form;
+    /* border: solid; */
+    background-color: var(--pink);
+    border-radius: 20px;
+    box-shadow: 5px 5px rgb(77 60 39 / 50%);
+    padding: 5px;
 }
 
 #map {
     grid-area: map;
-    position: relative;
-    left: 400px;
-   bottom:200px
-
-    
-    
 }
