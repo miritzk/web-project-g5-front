@@ -1,9 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome! יריד הפיצוחים</title>
-    <link rel="stylesheet" href="../Menu/menu_css.css">
-    <script src="../Menu/screen1_js.js"></script>
+    <title>Welcome!</title>
     <link rel="stylesheet" href="Profile.css">
     <script src="Profile.js"></script>
     <script>
@@ -18,52 +16,19 @@
 <body>
 
 <div class="Grid_container">
-    <!---------------------------------Fixed Header--------------------------------->
-    <!--these are all the divs related to the fixed footer  -->
-    <div class="header">
-        <div class="navbar">
-            <a href="../about/about.html">אודות</a>
-            <a href="../Package/Packages.html">מארזים</a>
-            <a href="../products/products_screen.html">מוצרים</a>
+ 
         </div>
-
-        <div class="header_profile">
-            <a href="../Profile/Profile.html" onclick="check_LoggedIn()"><img src="../menu_pics/profile%20icon.svg"
-                                                                              width="45px" alt="Profile_Pic"><br></a>
-
-            <div class="header_profile" id="header_profile_text" style="margin: 0; padding: 0">
-                <a href="../Registration/Registration%20Details.html">הרשמה</a><br>
-                <button onclick="openLoginForm()">התחברות</button>
-            </div>
-        </div>
-
-            <div class="header_cart">
-                <a href="../Cart/Cart.html"><img src="../menu_pics/cart%20icon.png" alt="Cart_Pic" width="45px"></a><br>
-                העגלה שלי
-            </div>
-
-        <div class="header_contact">
-            <button onclick="openContactForm()">צור קשר</button>
-        </div>
-
-        <div class="header_address">הזמנות בווטסאפ: 050-7888385</div>
-
-        <div class="header_logo">
-            <a href="../Menu/screen1.html"><img src="../menu_pics/logo%20icon.jpeg" alt="Logo_Pic" width="100px"></a>
-        </div>
-    </div> <!--End of fixed header-->
-
-
-    <!---------------------------------Content--------------------------------->
-    <div class="content">
-
-
+   
+        <div class="UserHeader" id="UserHeader">
+            <h2>My Profile</h2>
+          </div>
+          <div class="content">
         <div class="profile_general_container">
 
             <div class="menuTabs">
                 <div dir="rtl" class="tab">
-                    <button class="tablinks" onclick="openTab(event, 'הפרטים שלי')"
-                            style="border-top-left-radius: 8px; border-top-right-radius: 8px">הפרטים שלי
+                    <button class="tablinks" onclick="openTab(event, 'My Details')"
+                            style="border-top-left-radius: 8px; border-top-right-radius: 8px"> My Details
                     </button>
                     <button class="tablinks" onclick="openTab(event, 'אמצעי תשלום')">אמצעי תשלום</button>
                     <button class="tablinks" onclick="openTab(event, 'ההזמנות שלי')"
@@ -76,82 +41,81 @@
 
             <div class="tabscontent">
 
-                <div id="הפרטים שלי" class="tabcontent" style="text-align: center">
+                <div id=" My details" class="tabcontent" style="text-align: center">
 
-                    <h3>הפרטים שלי</h3>
+                    <h3>  My details</h3>
                     <hr style="color: #ad948c">
                     <div class="tabcontent_grid_container">
 
                         <div class="divBut">
-                            <input type="button" class="upButton" id="updateDetails" value="עדכן פרטים"
+                            <input type="button" class="upButton" id="updateDetails" value="Update Details"
                                    onclick="ShowForm('form1', 'divDet2', 'updateDetails')">
                         </div>
 
                         <div class="divDet" style="text-align: right">
-                            <p style="direction: rtl; margin:20px 50px ">
-                                שם ושם משפחה:
+                            <p style="direction: ltr; margin:20px 50px ">
+                              Carmel Ben-Shoshan
                                 <br><br>
-                                מייל:
+                                carmela@gmail.com
                                 <br><br>
-                                מספר טלפון:
+                                0543327345
                                 <br><br>
-                                עיר:
+                                Nofit
                                 <br><br>
-                                רחוב:
+                                Hatamar
                                 <br><br>
-                                מס דירה:
+                                 24
                                 <br><br>
-                                מיקוד:
+                             0000
                                 <br><br>
                         </div>
 
-                        <div class="divUp" style="text-align: right">
+                        <div class="divUp" style="text-align: left">
 
                             <div class="divDet2" id="divDet2" style="text-align: center ">
-                                <p style="direction: rtl; margin:20px 10px ">
-                                <p id="name"> סתיו בן שושן</p>
-                                <br>
-                                stav93@gmail.com
+                                <p style="direction: ltr; margin:20px 10px ">
+                                <p id="name">  First and last name:</p> 
+                               Email:
                                 <br><br>
-                                052-5841093
+                               Phone Number:
                                 <br><br>
-                                Tel Aviv
+                                City:
                                 <br><br>
-                                Dizengoff
+                              Street:
                                 <br><br>
-                                9
+                             Apt. Number: 
                                 <br><br>
-                                36001
+                                Zipcode: 
                                 <br><br>
                             </div>
 
 
-                            <form dir="rtl" class="forms" id="form1" style="display: none">
+                            <form dir="ltr" class="forms" id="form1" style="display: none">
                                 <div class="container">
 
                                     <br>
-                                    <input class="update" name="name" placeholder="הכנס שם" required
+                                    <input class="update" name="name" placeholder="Fill name" required
                                            onkeyup="updateText('name')"><br>
 
                                     <br>
-                                    <input class="update" id="email" type="email" name="mail" placeholder="הכנס מייל"
+                                    <input class="update" id="email" type="email" name="mail" placeholder="Enter email "
                                            required><br>
 
                                     <br>
-                                    <input class="update" name="phone" type="number" placeholder="הכנס טלפון"
+                                    <input class="update" name="phone" type="number" placeholder="Enter phone number"
                                            required><br>
 
                                     <br>
-                                    <input class="update" name="city" placeholder="הכנס עיר " required><br>
+                                    <input class="update" name="city" placeholder="Enter city" required><br>
 
                                     <br>
-                                    <input class="update" name="street" placeholder="הכנס רחוב " required><br>
+                                    <input class="update" name="street" placeholder=" Enter street " required><br>
 
                                     <br>
-                                    <input class="update" name="apartment" placeholder="הכנס מספר דירה " required><br>
+                                    <input class="update" name="apartment" placeholder="  Enter apt. number " required><br>
 
                                     <br>
-                                    <input class="update" name="mikud" placeholder="הכנס מיקוד " required><br>
+                                    <input class="update" name="mikud" placeholder="Enter zipcode  " required><br>
 
                                     <button class="upButton" type="submit" onclick="updateText('name')"
                                             style="margin: 30px 80px; width: 80px">עדכן
