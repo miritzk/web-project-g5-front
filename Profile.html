@@ -1,7 +1,10 @@
-<html lang="en">
+ <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Welcome!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="Profile.css">
     <script src="Profile.js"></script>
     <script>
@@ -14,7 +17,45 @@
 
 </head>
 <body>
-
+<!------------------------------------------- menu ------------------------------------------->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images/pilates.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            Michal Pilates
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+            <a class="nav-link" href="homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="PriceList.html">Prices</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="workouts.html">Workouts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="calendar.html">Calendar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactPage.html">Contact Us</a>
+           </li>
+            <li class="nav-item">
+                <a class="nav-link" href="LogIn.html">Log In</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+  </nav>
+  <!------------------------------------------- end menu ------------------------------------------->
 <div class="Grid_container">
  
         </div>
@@ -47,10 +88,6 @@
                     <hr style="color: #ad948c">
                     <div class="tabcontent_grid_container">
 
-                        <div class="divBut">
-                            <input type="button" class="upButton" id="updateDetails" value="Update Details"
-                                   onclick="ShowForm('form1', 'divDet2', 'updateDetails')">
-                        </div>
 
                         <div class="divDet" style="text-align: right">
                             <p style="direction: ltr; margin:20px 50px ">
@@ -89,6 +126,10 @@
                                 <br><br>
                             </div>
 
+                            <div class="divBut">
+                                <input type="button" class="upButton" id="updateDetails" value="Update Details"
+                                       onclick="ShowForm('form1', 'divDet2', 'updateDetails')">
+                            </div>
 
                             <form dir="ltr" class="forms" id="form1" style="display: none">
                                 <div class="container">
@@ -134,7 +175,7 @@
                     <div class="tabcontent_grid_container" style="padding: 20px">
 
                         <div class="divBut" style="text-align: center">
-                            <input type="button" class="upButton" id="updateDetails2" value="עדכן פרטים"
+                            <input type="button" class="upButton" id="updateDetails2" value="עדכן פרטים" 
                                    onclick="ShowForm('form2', 'divDet3', 'updateDetails2')">
                         </div>
 
@@ -203,116 +244,24 @@
 
     </div> <!--End of content div-->
 
-    <!---------------------------------Fixed Footer--------------------------------->
-
-    <!--these are all the divs related to the fixed footer  -->
-    <div class="footer">
-        <div class="footer_pic"><br>
-            <b>יריד הפיצוחים</b>
-            <br><br>
-            <a href="https://www.facebook.com/%D7%94%D7%A7%D7%95%D7%9C%D7%94-%D7%91%D7%A2%D7%99%D7%A8-%D7%90%D7%A7%D7%A1%D7%A4%D7%A8%D7%A1-104787860898945"
-               target="_blank"><img src="../menu_pics/fb%20icon.jpg" width="30px"></a>
-            <a href="https://www.instagram.com/hakole.bair/" target="_blank"><img src="../menu_pics/inst%20icon.jpg"
-                                                                                  width="30px"></a>
-        </div>
-
-        <div class="footer_hours"><br>
-            <p><u><b>שעות פתיחה</b></u><br>
-                ימים א-ה: 10:00-20:00 <br>
-                יום ו׳: 10:00-20:00 <br>
-                יום שבת: 18:00-20:00 <br>
-            </p>
-        </div>
-
-        <div class="footer_join_button">
-            <br><br>
-            <button onclick="openMailingListForm()"> הצטרפות לרשימת <br>תפוצה</button>
-        </div>
-    </div> <!--end of fixed footer-->
-
-
-    <!---------------------------------Pop Ups--------------------------------->
-
-    <div class="popup-overlay"></div>
-
-    <!------------------Login popup------------------>
-    <div class="login_popup">
-        <div class="login_popup-close" onclick="closeLoginForm()">&times;</div>
-        <div class="login_form">
-            <img src="../menu_pics/connect%20icon.png" alt="connect pic"><br>
-            <h8>התחברות למערכת</h8>
-            <div class="login_popup_inputs" style="text-align: right">
-                <label for="login_email">מייל</label>
-                <input type="email" id="login_email" required placeholder="name@domain">
-                <label for="login_psw">סיסמה</label>
-                <input type="password" id="login_psw" required>
-            </div>
-            <div class="login_popup_inputs">
-                <button onclick=LoginCheck()>התחברות</button>
-            </div>
-            <div class="login_reg_forgotPass">
-                <br>
-                <button onclick="user_forgot_pass()">שכחתי סיסמה</button>
-                <a href="../Registration/Registration%20Details.html"
-                   style="float: right; padding-right: 10px; background: #eee;">הרשמה לאתר</a>
-            </div>
-        </div>
-    </div> <!--End of login pop up-->
-
-
-    <!------------------Contact popup------------------>
-    <div class="contact_popup">
-        <div class="contact_popup-close" onclick="closeContactForm()">&times;</div>
-        <div class="contact_form">
-            <img src="../menu_pics/contact%20icon.jpg" alt="contact pic"><br><br>
-            <h8>טופס יצירת קשר</h8>
-
-            <form action="" class="contact_popup_inputs" style="text-align: right">
-                <label for="contact_name">שם מלא</label>
-                <input type="text" id="contact_name" name="contact_name" required>
-
-                <label for="contact_Phone_num">מספר טלפון</label>
-                <input type="tel" id="contact_Phone_num" name="contact_Phone_num" style="text-align: left">
-
-                <label for="contact_Email_address">כתובת מייל</label>
-                <input type="email" id="contact_Email_address" name="contact_Email_address" placeholder="name@domain"
-                       required style="text-align: left">
-
-                <label for="contact_Massage">הודעה</label>
-                <textarea id="contact_Massage" name="contact_Massage" cols="45" rows="8" maxlength="400"
-                          style="width: 760px; text-align: right;"></textarea>
-
-                <div class="contact_popup_submit" style="text-align: center">
-                    <br>
-                    <input type="submit" onclick="contact_form_complete()" value="שלח טופס"
-                           style="font-size:20px; width: 100px; text-align: center; background: white; box-shadow: #555555; cursor: pointer; background: #797270; color: white">
-                </div>
-            </form>
-        </div>
-    </div> <!--End of contact pop up-->
-
-
-    <!------------------Mailing List popup------------------>
-    <div class="mailing_popup">
-        <div class="mailing_popup-close" onclick="closeMailingListForm()">&times;</div>
-        <div class="mailing_form">
-            <img src="../menu_pics/mail%20icon.png" alt="mail pic"><br>
-            <h8>הצטרפו לרשימת התפוצה שלנו והיו הראשונים לדעת על המבצעים שלנו</h8>
-            <div class="mailing_popup_inputs" style="text-align: center">
-                <br>
-                <label for="email_mailing_list">הזן כתובת מייל</label>
-                <br>
-                <input type="email" id="email_mailing_list" required placeholder="name@domain"
-                       style="width: 200px;border-radius: 10%">
-            </div>
-            <div class="login_popup_inputs">
-                <br>
-                <button onclick=contactSubmission()>להצטרפות</button>
-            </div>
-        </div>
-    </div> <!--End of mailing list pop up-->
-
-</div> <!--End of the general Grid Container-->
-</body>
-
-</html>
+    <!------------------------------------------- footer ------------------------------------------->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+      </a>
+      <span class="text-muted">&copy; 2021 Michal Pilates</span>
+    </div>
+    <div class="social-wrap">
+        <div><a class="text-muted" href="https://www.facebook.com/">
+          <img src="images/facebook.svg" alt="" width="30" height="24">
+        </a></div>
+        <div><a class="text-muted" href="https://www.instagram.com/">
+          <img src="images/instagram.svg" alt="" width="30" height="24">
+        </a></div>
+        <div ><a class="text-muted" href="https://www.youtube.com/">
+          <img src="images/youtube.svg" alt="" width="30" height="24">
+        </a></div>
+  </div>
+  </footer>
+  <!------------------------------------------- end footer ------------------------------------------->
