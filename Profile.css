@@ -1,11 +1,10 @@
-
 .content {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     color: #927e7b;
     padding-top: 20px;
-        background-image: url(background.jpg);
+    background-image: url(background.jpg);
     background-size: 1500px;
 
 
@@ -32,7 +31,6 @@
 
 .content .menuTabs {
     grid-area: menu1;
-    background-image: url(background.jpg);
     background-size: 5000px;
 
 }
@@ -62,7 +60,6 @@
 }
 
 .content .tabscontent {
-    background-image: url(background.jpg);
     background-size: 1500px;
 
 }
@@ -90,7 +87,7 @@
     text-align: center;
     font-size: 18px;
     color: #fdf7f5;
-    /*border-radius: 10px;*/
+    /border-radius: 10px;/
 
 }
 
