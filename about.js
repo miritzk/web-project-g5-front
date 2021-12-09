@@ -17,5 +17,5 @@ function stopmotionloop() {
         else {
             i = 0;
         }
-    }, 500)
+    }, 2500)
 }

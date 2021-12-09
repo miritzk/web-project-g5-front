@@ -2,11 +2,11 @@ function checkpsw() {
     if (document.getElementById('psw').value ==
       document.getElementById('psw-repeat').value) {
       document.getElementById('message').style.color = 'green';
-      document.getElementById('message').innerHTML = 'הסיסמה תואמת';
+      document.getElementById('message').innerHTML = 'Matching password';
       document.getElementById('signupbtn').disabled = false;
     } else {
       document.getElementById('message').style.color = 'red';
-      document.getElementById('message').innerHTML = 'הסיסמה אינה תואמת';
+      document.getElementById('message').innerHTML = 'Password does not match';
       document.getElementById('signupbtn').disabled = true;
     }
   }
@@ -24,6 +24,6 @@ function checkpsw() {
         (document.getElementById('postalcode').value != "")
   
     ){
-        alert("פרטיך נשמרו במערכת!");
+        alert("Your details have been saved in the system!");
     }
   }
