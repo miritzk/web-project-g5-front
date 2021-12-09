@@ -2,15 +2,62 @@
 
 const events = [
     {
+        id:"1",
+        title: 'test',
+        date: '05/12/2021',
+        start: '08:00',
+        description: "",
+        duration:1.5,
+        color:"rgb(231, 55, 84)"
+    },
+    {
+        id:"1",
+        title: 'test',
+        date: '06/12/2021',
+        start: '08:00',
+        description: "",
+        duration:1.5,
+        color:"rgb(231, 55, 84)"
+    },
+    {
+        id:"1",
+        title: 'test',
+        date: '07/12/2021',
+        start: '08:00',
+        description: "",
+        duration:1.5,
+        color:"rgb(231, 55, 84)"
+    },
+    {
+        id:"1",
         title: 'test',
         date: '08/12/2021',
         start: '08:00',
         description: "",
         duration:1.5,
         color:"rgb(231, 55, 84)"
+    },
+    {
+        id:"1",
+        title: 'test',
+        date: '09/12/2021',
+        start: '08:00',
+        description: "",
+        duration:1.5,
+        color:"rgb(231, 55, 84)"
+    },
+    {
+        id:"1",
+        title: 'test',
+        date: '09/12/2021',
+        start: '10:00',
+        description: "",
+        duration:1.5,
+        color:"rgb(231, 55, 84)"
     }
 ]
-function generateCal(divId = "calendar", halfHourCellHeight = 20, events = events) {
+function generateCal(divId = "calendar", halfHourCellHeight = 20, events = events, startHour = 6, endHour = 22) {
+    console.log(endHour-startHour)
     let cal = document.querySelector(`#${divId}`);
     const today = moment();
     const from_date = today.startOf('week');
@@ -38,11 +85,12 @@ function generateCal(divId = "calendar", halfHourCellHeight = 20, events = event
     let timesColHours = timesCol.appendChild(document.createElement("div"));
     timesColHours.className = "day-hours";
     // legend shift
-    let shifting = timesColHours.appendChild(document.createElement("div"));
-    shifting.style.height = halfHourCellHeight + "px";
-    shifting.className = "shifting";
+    // let shifting = timesColHours.appendChild(document.createElement("div"));
+    // shifting.style.height = halfHourCellHeight + "px";
+    // shifting.className = "shifting";
+
     // legend hours:
-    for (j = 1; j < 24; j++) {
+    for (j = startHour; j < endHour; j++) {
         let hourCell = timesColHours.appendChild(document.createElement("div"));
         hourCell.className = "time-cell hour-title-cell";
         hourCell.style.height = halfHourCellHeight * 2 + "px";
@@ -58,7 +106,7 @@ function generateCal(divId = "calendar", halfHourCellHeight = 20, events = event
     let dayHours = dayColumn.appendChild(document.createElement("div"));
     dayHours.className = "day-hours";
         // for each hour add two div cells
-    for (j = 0; j < 24; j++) {
+    for (j = startHour; j < endHour; j++) {
         let hourCell = dayHours.appendChild(document.createElement("div"));
         hourCell.className = "time-cell hour-cell";
         hourCell.style.height = halfHourCellHeight + "px";
@@ -66,8 +114,9 @@ function generateCal(divId = "calendar", halfHourCellHeight = 20, events = event
         halfHourCell.className = "time-cell half-hour-cell";
         halfHourCell.style.height = halfHourCellHeight + "px";
         }
-    dayHours.removeChild(dayHours.lastChild);
+    // dayHours.firstChild.style.marginTop = halfHourCellHeight + "px";
     }
+
     events.forEach(event => {
         let eventMoment = moment(event.date + event.start, "DD/MM/YYYYHH:mm")
         evDiv = document.createElement("div")
@@ -76,15 +125,20 @@ function generateCal(divId = "calendar", halfHourCellHeight = 20, events = event
         if (event.color) {
             evDiv.style.backgroundColor = event.color;
         }
-        let eventCell = cal.children[1].children[eventMoment.day()].children[0].children[eventMoment.hour() * 2];
+        let eventCell = cal.children[1].children[eventMoment.day()+1].children[0].children[(eventMoment.hour() - startHour) * 2 ];
         eventCell.appendChild(evDiv);
         eventCell.style.height = halfHourCellHeight * 2 * event.duration + "px";
-        // eventCell.style.height = halfHourCellHeight + "px";
-        for (let i = 1; i < event.duration * 2; i++) {
+        eventCell.addEventListener("click", () => {
+            // what to do on click on the event:
+            ans = confirm("whould you like to join this event?");
+            if (ans) {
+                console.log("you joined the event");
+            }
+        })
+        for (let i = 1; i < (event.duration * 2); i++) {
             eventCell.nextSibling.remove();
-            // cal.children[1].children[eventMoment.day()].children[0].children[eventMoment.hour()*2 + 1].remove();
         }
     });
 }
 
-generateCal();
+generateCal("calendar", 40, events, 6 , 22);
