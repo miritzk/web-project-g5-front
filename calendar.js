@@ -4,7 +4,7 @@ const events = [
     {
         id: "1",
         title: 'test',
-        date: '05/12/2021',
+        date: moment().startOf('week').format("DD/MM/YYYY"),
         start: '08:00',
         description: "",
         duration: class_duration,
@@ -13,7 +13,7 @@ const events = [
     {
         id: "1",
         title: 'test',
-        date: '06/12/2021',
+        date: moment().startOf('week').add(1,'day').format("DD/MM/YYYY"),
         start: '08:00',
         description: "",
         duration: class_duration,
@@ -22,7 +22,7 @@ const events = [
     {
         id: "1",
         title: 'test',
-        date: '07/12/2021',
+        date: moment().startOf('week').add(2,'day').format("DD/MM/YYYY"),
         start: '08:00',
         description: "",
         duration: class_duration,
@@ -31,7 +31,7 @@ const events = [
     {
         id: "1",
         title: 'test',
-        date: '08/12/2021',
+        date: moment().startOf('week').add(3,'day').format("DD/MM/YYYY"),
         start: '08:00',
         description: "",
         duration: class_duration,
@@ -40,7 +40,7 @@ const events = [
     {
         id: "1",
         title: 'test',
-        date: '09/12/2021',
+        date: moment().startOf('week').add(4,'day').format("DD/MM/YYYY"),
         start: '08:00',
         description: "",
         duration: class_duration,
@@ -49,7 +49,7 @@ const events = [
     {
         id: "1",
         title: 'test',
-        date: '09/12/2021',
+        date: moment().startOf('week').add(4,'day').format("DD/MM/YYYY"),
         start: '10:00',
         description: "",
         duration: class_duration,

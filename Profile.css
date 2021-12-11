@@ -4,7 +4,10 @@
     grid-template-columns: auto 250px;
     border: 1px solid #c9afa7;
 }
-
+.nonEdit{
+    background-color: transparent;
+    border: none;
+}
 .menuTabs {
     grid-area: menuTabs;
     background-color: #c9afa7;
@@ -57,14 +60,15 @@
     border: 1px solid #ad948c;
 }
 
-.my_details {
+.info_container {
     display: grid;
     justify-content: center;
 }
 
-.my_details table td {
+.info_container table td {
     padding: 10px 20px;
 }
+
 
 .row_head {
     font-weight: bold;
@@ -73,6 +77,7 @@
 
 
 .profile_general_container .tabcontent .upButton {
+    width: 100%;
     margin: 10px;
     padding: 10px;
     justify-content: space-evenly;
