@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to bottom, rgba(56, 55, 55, 0.7), rgba(56, 55, 55,  0.7)), url("images/pilatespic.png");;
+
  background-color: #cccccc;
 }
 
@@ -26,8 +26,16 @@ body {
 .home_div a:hover {
     color: var(--coral);
 }
-
+.headerContainer{
+    background-image: linear-gradient(to bottom, rgba(56, 55, 55, 0.7), rgba(56, 55, 55,  0.7)), url("images/pilatespic.png");
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .header {
+
     font-size: 150px;
     animation: fadeIn linear 7s;
     -webkit-animation: fadeIn linear 7s;
