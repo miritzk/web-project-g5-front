@@ -2,6 +2,7 @@
     display: grid;
     grid-gap: 20px;
     grid-template-areas: 
+    "w_0 w_0 w_0 w_0 w_0 w_0"
     "w_1 w_1 w_1 w_2 w_2 w_2"
     "w_3 w_3 w_3 w_4 w_4 w_4";
 }
@@ -31,6 +32,12 @@ h3 {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+#w_0 {
+    grid-area: w_0;
+    margin-left: 25px;
+}
+
+
 #w_1 {
     grid-area: w_1;
     margin-left: 25px;
@@ -55,6 +62,7 @@ h3 {
     text-align: center;
     margin: 25px;
 }
+
 @media (max-width: 800px) {
     .grid {
         grid-template-areas: 
@@ -80,3 +88,17 @@ h3 {
         margin: 0 25px;
     }
   }
+
+.btn_redorded {
+    border: unset;
+    padding: 7px 50px;
+    border-radius: 5px;
+    background-color: var(--coral);
+    color: white;
+    /* font-weight: bold; */
+}
+
+.btn_redorded:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: var(--pink);
+}
