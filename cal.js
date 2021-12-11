@@ -57,7 +57,6 @@ const events = [
     }
 ]
 function generateCal(divId = "calendar", halfHourCellHeight = 20, events = events, startHour = 6, endHour = 22) {
-    console.log(endHour-startHour)
     let cal = document.querySelector(`#${divId}`);
     const today = moment();
     const from_date = today.startOf('week');
@@ -110,9 +109,11 @@ function generateCal(divId = "calendar", halfHourCellHeight = 20, events = event
         let hourCell = dayHours.appendChild(document.createElement("div"));
         hourCell.className = "time-cell hour-cell";
         hourCell.style.height = halfHourCellHeight + "px";
+        hourCell.id=`day-${i}-hour-${j*10}`;
         let halfHourCell = dayHours.appendChild(document.createElement("div"));
         halfHourCell.className = "time-cell half-hour-cell";
         halfHourCell.style.height = halfHourCellHeight + "px";
+        halfHourCell.id=`day-${i}-hour-${(j+0.5)*10}`;
         }
     // dayHours.firstChild.style.marginTop = halfHourCellHeight + "px";
     }
@@ -125,7 +126,7 @@ function generateCal(divId = "calendar", halfHourCellHeight = 20, events = event
         if (event.color) {
             evDiv.style.backgroundColor = event.color;
         }
-        let eventCell = cal.children[1].children[eventMoment.day()+1].children[0].children[(eventMoment.hour() - startHour) * 2 ];
+        let eventCell = document.querySelector(`#day-${eventMoment.day()}-hour-${eventMoment.hour()*10}`);
         eventCell.appendChild(evDiv);
         eventCell.style.height = halfHourCellHeight * 2 * event.duration + "px";
         eventCell.addEventListener("click", () => {
@@ -135,10 +136,33 @@ function generateCal(divId = "calendar", halfHourCellHeight = 20, events = event
                 console.log("you joined the event");
             }
         })
-        for (let i = 1; i < (event.duration * 2); i++) {
-            eventCell.nextSibling.remove();
+        for (let i=eventMoment.hour() + 0.5; i < eventMoment.hour() + event.duration; i+=0.5) {
+            let halfHourCell = document.querySelector(`#day-${eventMoment.day()}-hour-${i*10}`); // FIXME: 0.5 dont parss right
+            halfHourCell.remove();
         }
     });
+    // events.forEach(event => {
+    //     let eventMoment = moment(event.date + event.start, "DD/MM/YYYYHH:mm")
+    //     evDiv = document.createElement("div")
+    //     evDiv.className = "event";
+    //     evDiv.innerHTML = `<span className='event-title'>${event.title}</span><span className='event-description'>${event.description}</span>`;
+    //     if (event.color) {
+    //         evDiv.style.backgroundColor = event.color;
+    //     }
+    //     let eventCell = cal.children[1].children[eventMoment.day()+1].children[0].children[(eventMoment.hour() - startHour) * 2 ];
+    //     eventCell.appendChild(evDiv);
+    //     eventCell.style.height = halfHourCellHeight * 2 * event.duration + "px";
+    //     eventCell.addEventListener("click", () => {
+    //         // what to do on click on the event:
+    //         ans = confirm("whould you like to join this event?");
+    //         if (ans) {
+    //             console.log("you joined the event");
+    //         }
+    //     })
+    //     for (let i = 1; i < (event.duration * 2); i++) {
+    //         eventCell.nextSibling.remove();
+    //     }
+    // });
 }
 
 generateCal("calendar", 40, events, 6 , 22);
