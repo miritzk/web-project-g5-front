@@ -1,4 +1,4 @@
-function openTab(evt, cityName) {
+function openTab(evt, id) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -15,16 +15,72 @@ function openTab(evt, cityName) {
   }
 
   // Show the current tab, and add an "active" class to the link that opened the tab
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(id).style.display = "block";
   evt.currentTarget.className += " active";
 }
 
-function ShowForm(formId, divId, buttonId) {
-  document.getElementById(formId).style.display = "block";
-  document.getElementById(buttonId).style.display = "none";
-  document.getElementById(divId).style.display = "none";
+
+function editForm(){
+  arr = [
+    document.getElementById("inputFullName"),
+    document.getElementById("inputEmail"),
+    document.getElementById("inputPhoneNumber"),
+    document.getElementById("inputCity"),
+    document.getElementById("inputStreet"),
+    document.getElementById("inputAprtNum"),
+    document.getElementById("inputZipCode"),
+  ]
+  arr.forEach((element) => {
+    element.disabled = false;
+    element.className = "";
+  })
+  document.getElementById("updateDetails").hidden = true;
+  document.getElementById("submitUpdate").hidden = false;
 }
 
-function updateText(pid) {
-  document.getElementById(pid).innerHTML = 'bla';
+function submitForm(){
+  arr = [
+    document.getElementById("inputFullName"),
+    document.getElementById("inputEmail"),
+    document.getElementById("inputPhoneNumber"),
+    document.getElementById("inputCity"),
+    document.getElementById("inputStreet"),
+    document.getElementById("inputAprtNum"),
+    document.getElementById("inputZipCode"),
+  ]
+  arr.forEach((element) => {
+    element.disabled = true;
+    element.className = "nonEdit";
+  })
+  document.getElementById("updateDetails").hidden = false;
+  document.getElementById("submitUpdate").hidden = true;
+}
+
+
+function editCardInfo(){
+  arr = [
+    document.getElementById("inputCreditCard"),
+    document.getElementById("inputExpirationDate"),
+    document.getElementById("inputCVV"),
+  ]
+  arr.forEach((element) => {
+    element.disabled = false;
+    element.className = "";
+  })
+  document.getElementById("updateCardInfo").hidden = true;
+  document.getElementById("submitCardInfo").hidden = false;
+}
+
+function submitCardInfo(){
+  arr = [
+    document.getElementById("inputCreditCard"),
+    document.getElementById("inputExpirationDate"),
+    document.getElementById("inputCVV"),
+  ]
+  arr.forEach((element) => {
+    element.disabled = true;
+    element.className = "nonEdit";
+  })
+  document.getElementById("updateCardInfo").hidden = false;
+  document.getElementById("submitCardInfo").hidden = true;
 }

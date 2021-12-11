@@ -12,8 +12,6 @@
     <script>
         tabcontent[1].style.display = "none";
         tabcontent[2].style.display = "none";
-        forms[1].style.display = "none";
-
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -81,81 +79,41 @@
             <div id="My_Details" class="tabcontent">
                 <h3>My Details</h3>
                 <hr>
-                <div class="my_details">
+                <div class="info_container">
                     <table>
                         <tr>
                             <td class="row_head">Full Name:</td>
-                            <td>Carmel Ben-Shoshan</td>
+                            <td><input class="nonEdit" value="Carmel Ben-Shoshan" name="name" id="inputFullName" disabled/></td>
                         </tr>
                         <tr>
                             <td class="row_head">Email:</td>
-                            <td>carmela@gmail.com</td>
+                            <td><input class="nonEdit" value="carmela@gmail.com" name="name" id="inputEmail" disabled/></td>
                         </tr>
                         <tr>
                             <td class="row_head">Phone Number:</td>
-                            <td>0543327345</td>
+                            <td><input class="nonEdit" value="0543327345" name="phone_number" id="inputPhoneNumber" disabled/></td>
                         </tr>
                         <tr>
                             <td class="row_head">City:</td>
-                            <td>Nofit</td>
+                            <td><input class="nonEdit" value="Nofit" name="city" id="inputCity" disabled/></td>
                         </tr>
                         <tr>
                             <td class="row_head">Street:</td>
-                            <td>Gilboa</td>
+                            <td><input class="nonEdit" value="Gilboa" name="street" id="inputStreet" disabled/></td>
                         </tr>
                         <tr>
                             <td class="row_head">Apt. Number:</td>
-                            <td>60</td>
+                            <td><input class="nonEdit" value="60" name="aprtNum" id="inputAprtNum" disabled/></td>
                         </tr>
                         <tr>
                             <td class="row_head">Zipcode:</td>
-                            <td>360010</td>
+                            <td><input class="nonEdit" value="60" name="zipcode" id="inputZipCode" disabled/></td>
                         </tr>
                     </table>
-                </div>
-
-                <div class="update_details">
                     <input type="button" class="upButton" id="updateDetails" value="Update Details"
-                        onclick="ShowForm('update_details_form', 'my_details', 'updateDetails')">
-
-                    <form class="forms" id="update_details_form" style="display: none">
-                        <table>
-                            <tr>
-                                <td class="row_head">Full Name:</td>
-                                <td><input class="update" name="name" placeholder="Fill name" required
-                                        onkeyup="updateText('name')"></td>
-                            </tr>
-                            <tr>
-                                <td class="row_head">Email:</td>
-                                <td><input class="update" id="email" type="email" name="email" placeholder="Enter email"
-                                        required></td>
-                            </tr>
-                            <tr>
-                                <td class="row_head">Phone Number:</td>
-                                <td><input class="update" name="phone" type="tel" placeholder="Enter phone number"
-                                        required></td>
-                            </tr>
-                            <tr>
-                                <td class="row_head">City:</td>
-                                <td><input class="update" name="city" placeholder="Enter city" required></td>
-                            </tr>
-                            <tr>
-                                <td class="row_head">Street:</td>
-                                <td><input class="update" name="street" placeholder="Enter street" required></td>
-                            </tr>
-                            <tr>
-                                <td class="row_head">Apt. Number:</td>
-                                <td><input class="update" name="apartment" placeholder="Enter apt. number" required>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="row_head">Zipcode:</td>
-                                <td><input class="update" name="zipcode" placeholder="Enter zipcode" required></td>
-                            </tr>
-                        </table>
-
-                        <button class="upButton" type="submit" onclick="updateText('name')">update</button>
-                    </form>
+                           onclick="editForm()">
+                    <input type="button" class="upButton" id="submitUpdate" value="Submit Update"
+                           onclick="submitForm()" hidden>
                 </div>
             </div>
 
@@ -163,67 +121,68 @@
             <div id="Payment_Methods" class="tabcontent" style="display: none">
                 <h3>Payment methods</h3>
                 <hr style="color: #ad948c">
-                <div class="tabcontent_grid_container" style="padding: 20px">
-
-                    <div class="divBut" style="text-align: center">
-                        <input type="button" class="upButton" id="updateDetails2" value="Update details"
-                            onclick="ShowForm('form2', 'divDet3', 'updateDetails2')">
-                    </div>
-
-                    <div class="divDet" style="text-align: right">
-                        <p style="direction: rtl; margin:20px 50px ">
-                            מספר כרטיס:
-                            <br><br>
-                            סוג כרטיס:
-                            <br><br>
-                            תוקף:
-                            <br><br>
-
-                    </div>
-
-                    <div class="divUp" style="text-align: right">
-
-                        <div class="divDet2" id="divDet3" style="text-align: center ">
-                            <p style="direction: rtl; margin:20px 10px ">
-                                <span id="UserEmail">4580-1234-1234-XXXX</span>
-                                <br><br>
-                                visa
-                                <br><br>
-                                03/25
-                                <br><br>
-                        </div>
-
-
-                        <form dir="rtl" class="forms" id="form2" style="display: none">
-                            <div class="container">
-
-                                <br>
-                                <input class="update" id="cardNum" type="number" name="cardNum"
-                                    placeholder="הכנס מספר כרטיס" required><br>
-
-                                <br>
-                                <input class="update" id="cardType" name="cardType" placeholder="הכנס סוג כרטיס"
-                                    onkeyup="updateText(this)" required><br>
-
-                                <br>
-                                <input class="update" id="due" name="due" placeholder="הכנס תוקף" required><br>
-
-
-                                <button class="upButton" type="submit" onclick="try1()"
-                                    style="margin: 30px 80px; width: 80px">update
-                                </button>
-
-                            </div>
-                        </form>
+                <div class="tabcontent_grid_container">
+                    <div class="info_container">
+                    <table>
+                        <tr>
+                            <td class="row_head">
+                                Credit Card:
+                            </td>
+                            <td>
+                                <input type="text" id="inputCreditCard" value="4580-1234-1234-1234" class="nonEdit" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="row_head">
+                                Expiration Date:
+                            </td>
+                            <td>
+                                <input type="text" value="03/25" id="inputExpirationDate" class="nonEdit" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="row_head">
+                                CVV:
+                            </td>
+                            <td>
+                                <input type="text" value="547" id="inputCVV" class="nonEdit" disabled>
+                            </td>
+                        </tr>
+                    </table>
+                        <input type="button" class="upButton" id="updateCardInfo" value="Update"
+                               onclick="editCardInfo()">
+                        <input type="button" class="upButton" id="submitCardInfo" value="Submit Update"
+                               onclick="submitCardInfo()" hidden>
                     </div>
                 </div>
             </div>
 
             <div id="My_Orders" class="tabcontent" style="display: none">
                 <h3>My orders</h3>
-                <hr style="color: #ad948c"><br><br>
-                <a href="previous%20resrevations.html" style="background-color: #fdf7f5"> הזמנה שבוצעה בתאריך:
-                    24.12.2020</a>
+                <hr >
+                <div class="tabcontent_grid_container">
+                    <div class="info_container">
+                        <table>
+                            <tr>
+                                <th>Order Id</th>
+                                <th>Order Date</th>
+                                <th>Product Type</th>
+                                <th>Order Price</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>12/11/21</td>
+                                <td>Individual training</td>
+                                <td>40 ILS</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>14/11/21</td>
+                                <td>Individual training</td>
+                                <td>40 ILS</td>
+                            </tr>
+                        </table>
+                    </div>
             </div>
         </div>
     </div>
