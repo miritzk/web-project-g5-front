@@ -12,21 +12,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="common.css">
   <link rel="stylesheet" href="contactPage.css">
+  <script src="contactPage.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <title>Document</title>
+  <title>Contact us</title>
 </head>
-<li><input type="submit" name="submit" value="Submit" onclick="allLetter(document.form1.text1)" /></li>
-<li>&nbsp;</li>
-</ul>
-</form>
-</div>
-<script src="all-letter.js"> </script>
-</body>
-</html>
-<body>
+
   <!------------------------------------------- menu ------------------------------------------->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -129,7 +122,7 @@
           <tr>
             <!-- email -->
             <td>Email:</td>
-            <td><input type="text" name="input_email" id="input_email" required="required"></td>
+            <td><input type="email" name="input_email" id="input_email" required="required" pattern="\S+@\S+\.\S+"></td>
           </tr>
           <tr>
             <!-- message box -->
@@ -139,9 +132,11 @@
             <td colspan="2"><textarea name="input_message" id="input_message" required="required"></textarea></td>
           </tr>
         </table>
+         <!-- error message box -->
+         <!-- <p id="error_msg"></p> -->
         <!-- send btn -->
         <div class="inputBox" id="send_btn">
-          <input class="btn_general" type="submit" name="" value="Send">
+          <input class="btn_general" type="submit" id="" value="Send" onclick="allLetter()">
         </div>
       </form>
     </div>
