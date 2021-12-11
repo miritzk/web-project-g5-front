@@ -1,22 +1,15 @@
 .grid {
     display: grid;
     grid-gap: 20px;
-    grid-template-areas: 
-    "w_0 w_0 w_0 w_0 w_0 w_0"
-    "w_1 w_1 w_1 w_2 w_2 w_2"
-    "w_3 w_3 w_3 w_4 w_4 w_4";
+    grid-template-areas:
+        "w_0 w_0 w_0 w_0 w_0 w_0"
+        "w_1 w_1 w_1 w_2 w_2 w_2"
+        "w_3 w_3 w_3 w_4 w_4 w_4";
 }
 
 h3 {
     text-align: center;
     margin-bottom: 20px;
-}
-
-.workout img {
-    max-width: 100%;
-    max-height: 100%; 
-    object-fit: contain;
-    border-radius: 15px;
 }
 
 .workout {
@@ -26,6 +19,9 @@ h3 {
     box-shadow: 5px 5px rgba(77, 60, 39, 0.5);
     font-size: 20px;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .workout:hover {
@@ -38,6 +34,17 @@ h3 {
 
 .workout a:hover {
     color: var(--peach);
+}
+
+.workout_pic {
+    text-align: center;
+}
+
+.workout_pic img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
 }
 
 #w_0 {
@@ -74,12 +81,12 @@ h3 {
 
 @media (max-width: 800px) {
     .grid {
-        grid-template-areas: 
-        "w_0"
-        "w_1"
-        "w_2"
-        "w_3"
-        "w_4";
+        grid-template-areas:
+            "w_0"
+            "w_1"
+            "w_2"
+            "w_3"
+            "w_4";
     }
 
     #w_0 {
@@ -89,19 +96,19 @@ h3 {
     #w_1 {
         margin: 0 25px;
     }
-    
+
     #w_2 {
         margin: 0 25px;
     }
-    
+
     #w_3 {
         margin: 0 25px;
     }
-    
+
     #w_4 {
         margin: 0 25px;
     }
-  }
+}
 
 .btn_redorded {
     border: unset;
