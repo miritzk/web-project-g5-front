@@ -61,13 +61,13 @@
   <div class="row">
     <div class="col-75">
       <div class="container">
-        <form action="/action_page.php">
+        <form method="post">
   
           <div class="row">
             <div class="col-50">
               <h3>Billing Address</h3>
               <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Golda Meir">
+              <input type="text" id="fname" name="firstname" placeholder="Golda Meir" required>
               <label for="email"><i class="fa fa-envelope"></i> Email</label>
               <input type="text" id="email" name="email" placeholder="golda@example.com">
               <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
@@ -115,7 +115,7 @@
           <label>
             <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
           </label>
-          <input type="submit" value="Confirm Payment" class="btn">
+          <input id="confirm_pay_btn" type="submit" value="Confirm Payment" class="btn" onclick="allLetter()">
         </form>
       </div>
     </div>

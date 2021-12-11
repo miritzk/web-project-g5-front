@@ -1,20 +1,28 @@
-// When the user clicks on <div>, open the popup
-function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-  }
-
-  function allLetter(inputtxt)
-      { 
-      var letters = /^[A-Za-z]+$/;
-      if(inputtxt.value.match(letters))
-      {
-      return true;
-      }
-      else
-      {
-      alert('Please input alphabet characters only');
-      return false;
-      }
-      }
+// function checkLogin() {
+//     const email = document.getElementById("email");
+//     if (!email.checkValidity()) {
+//         document.getElementById("error_msg").innerHTML = email.validationMessage;
+//     }
+//     else {
+//         document.getElementById("error_msg").innerHTML = "";
+//     }
+//   }
   
+  function allLetter()
+  {
+   var letters = /^[A-Za-z]+$/;
+   const input_full_name = document.getElementById("input_full_name");
+   const email = document.getElementById("input_email");
+   if(input_full_name.value.match(letters) && email.checkValidity()) {
+      return true;
+    }
+    else if (!input_full_name.value.match(letters)) {
+        alert("Fill in alphabet letters only");
+        return false;
+    }
+    else if (!email.checkValidity()) {
+        alert(" Invalid email address");
+        return false;
+   
+  }
+}

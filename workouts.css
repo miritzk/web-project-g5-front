@@ -63,6 +63,37 @@ h3 {
     margin: 25px;
 }
 
+@media (max-width: 800px) {
+    .grid {
+        grid-template-areas: 
+        "w_0"
+        "w_1"
+        "w_2"
+        "w_3"
+        "w_4";
+    }
+
+    #w_0 {
+        margin: 0 25px;
+    }
+
+    #w_1 {
+        margin: 0 25px;
+    }
+    
+    #w_2 {
+        margin: 0 25px;
+    }
+    
+    #w_3 {
+        margin: 0 25px;
+    }
+    
+    #w_4 {
+        margin: 0 25px;
+    }
+  }
+
 .btn_redorded {
     border: unset;
     padding: 7px 50px;

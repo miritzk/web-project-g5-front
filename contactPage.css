@@ -99,4 +99,14 @@
     grid-area: send_btn;
     text-align: center;
 }
-
+@media (max-width: 800px) {
+  .contact_grid {
+        grid-template-areas: 
+        "contact_header"
+        "address"
+        "phone"
+        "email"
+        "form"
+        "map"
+    }
+}
