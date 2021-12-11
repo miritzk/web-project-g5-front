@@ -1,0 +1,36 @@
+.content {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content form {
+    max-width: 600px;
+    background-color: white;
+    border: 3px solid var(--pink);
+    padding: 20 120px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+
+.content form .user_input {
+    width: 350px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    text-align: left;
+}
+
+#sign_up_link {
+    color: var(--coral);
+}
+
+#sign_up_link:hover {
+    color: var(--grey);
+}
+

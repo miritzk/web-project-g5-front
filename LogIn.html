@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="common.css">
   <link rel="stylesheet" href="LogIn.css">
   <script src="LogIn.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <title>Log in</title>
 </head>
@@ -59,19 +62,20 @@
 
   <!--------------------------------- Content --------------------------------->
   <div class="content">
-    <form method='post'>
+    <form action="Profile.html" method='post'>
       <h1>Log in</h1>
       <p>Welcome back!</p>
       <!-- email -->
-      <label class="" for="Email"><b>Email Address:</b></label><br>
-      <input class="user_input" name="Email" id="Email" placeholder="Enter your email address" required type="text"><br>
+      <label class="" for="email"><b>Email Address:</b></label><br>
+      <input class="user_input" name="email" id="email" placeholder="Enter your email address" required type="email" pattern="\S+@\S+\.\S+"><br>
       <!-- password -->
-      <label class="" for="psw"><b>Password:</b></label><br>
-      <input class="user_input" name="psw" id="psw" placeholder="Enter your password" required type="password"
-        onkeyup="checkpsw()"><br>
+      <label class="" for="password"><b>Password:</b></label><br>
+      <input class="user_input" name="password" id="password" placeholder="Enter your password" required type="password" minlength="6"><br>
+      <!-- error message box -->
+        <p id="error_msg"></p>
       <!-- log in btn -->
-      <input type="submit" value="Log in" class="btn_general" id="Loginbtn" onclick="Purchase()"><br><br>
-      <a href="signUp.html" id="sign_up_link">Or Sign up here!</a>
+      <input type="submit" value="Log in" class="btn_general" id="Loginbtn" onclick="checkLogin()"><br><br>
+      <a href="signup.html" id="sign_up_link">Or Sign up here!</a>
     </form>
   </div>
   <!--------------------------------- Content --------------------------------->

@@ -4,7 +4,11 @@ var images = ["images/aboutPic2.JPG",
              "images/aboutPic3.JFIF", 
              "images/aboutPic4.JPG",
              "images/aboutPic5.JFIF",
-             "images/aboutPic6.JFIF"];
+             "images/aboutPic6.JFIF",
+             "images/aboutPic7.JFIF", 
+             "images/aboutPic8.JFIF",
+             "images/aboutPic9.JPG",
+             "images/aboutPic10.JPG"];
 var i = 0;
 
 function stopmotionloop() {
@@ -17,5 +21,5 @@ function stopmotionloop() {
         else {
             i = 0;
         }
-    }, 2500)
+    }, 1500)
 }
