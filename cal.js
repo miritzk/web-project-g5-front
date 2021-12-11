@@ -141,28 +141,6 @@ function generateCal(divId = "calendar", halfHourCellHeight = 20, events = event
             halfHourCell.remove();
         }
     });
-    // events.forEach(event => {
-    //     let eventMoment = moment(event.date + event.start, "DD/MM/YYYYHH:mm")
-    //     evDiv = document.createElement("div")
-    //     evDiv.className = "event";
-    //     evDiv.innerHTML = `<span className='event-title'>${event.title}</span><span className='event-description'>${event.description}</span>`;
-    //     if (event.color) {
-    //         evDiv.style.backgroundColor = event.color;
-    //     }
-    //     let eventCell = cal.children[1].children[eventMoment.day()+1].children[0].children[(eventMoment.hour() - startHour) * 2 ];
-    //     eventCell.appendChild(evDiv);
-    //     eventCell.style.height = halfHourCellHeight * 2 * event.duration + "px";
-    //     eventCell.addEventListener("click", () => {
-    //         // what to do on click on the event:
-    //         ans = confirm("whould you like to join this event?");
-    //         if (ans) {
-    //             console.log("you joined the event");
-    //         }
-    //     })
-    //     for (let i = 1; i < (event.duration * 2); i++) {
-    //         eventCell.nextSibling.remove();
-    //     }
-    // });
 }
 
 generateCal("calendar", 40, events, 6 , 22);
