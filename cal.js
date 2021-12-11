@@ -1,59 +1,59 @@
-
-
+const class_duration = 1;
+const mat_color = "rgb(231, 55, 84)";
 const events = [
     {
-        id:"1",
+        id: "1",
         title: 'test',
         date: '05/12/2021',
         start: '08:00',
         description: "",
-        duration:1.5,
-        color:"rgb(231, 55, 84)"
+        duration: class_duration,
+        color: mat_color
     },
     {
-        id:"1",
+        id: "1",
         title: 'test',
         date: '06/12/2021',
         start: '08:00',
         description: "",
-        duration:1.5,
-        color:"rgb(231, 55, 84)"
+        duration: class_duration,
+        color: mat_color
     },
     {
-        id:"1",
+        id: "1",
         title: 'test',
         date: '07/12/2021',
         start: '08:00',
         description: "",
-        duration:1.5,
-        color:"rgb(231, 55, 84)"
+        duration: class_duration,
+        color: mat_color
     },
     {
-        id:"1",
+        id: "1",
         title: 'test',
         date: '08/12/2021',
         start: '08:00',
         description: "",
-        duration:1.5,
-        color:"rgb(231, 55, 84)"
+        duration: class_duration,
+        color: mat_color
     },
     {
-        id:"1",
+        id: "1",
         title: 'test',
         date: '09/12/2021',
         start: '08:00',
         description: "",
-        duration:1.5,
-        color:"rgb(231, 55, 84)"
+        duration: class_duration,
+        color: mat_color
     },
     {
-        id:"1",
+        id: "1",
         title: 'test',
         date: '09/12/2021',
         start: '10:00',
         description: "",
-        duration:1.5,
-        color:"rgb(231, 55, 84)"
+        duration: class_duration,
+        color: mat_color
     }
 ]
 function generateCal(divId = "calendar", halfHourCellHeight = 20, events = events, startHour = 6, endHour = 22) {
@@ -131,7 +131,7 @@ function generateCal(divId = "calendar", halfHourCellHeight = 20, events = event
         eventCell.style.height = halfHourCellHeight * 2 * event.duration + "px";
         eventCell.addEventListener("click", () => {
             // what to do on click on the event:
-            ans = confirm("whould you like to join this event?");
+            ans = confirm("Whould you like to join this event?");
             if (ans) {
                 console.log("you joined the event");
             }
@@ -144,3 +144,4 @@ function generateCal(divId = "calendar", halfHourCellHeight = 20, events = event
 }
 
 generateCal("calendar", 40, events, 6 , 22);
+console.log("hi")

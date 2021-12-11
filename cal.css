@@ -1,22 +1,25 @@
-.calendar{
+.calendar {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     background-color: white;
 }
-.calendar .calendar-header{
+
+.calendar .calendar-header {
     display: flex;
     flex-direction: row;
+    background-color: var(--beigh);
 }
 
-.calendar .calendar-body{
+.calendar .calendar-body {
     display: flex;
     flex-direction: row;
     height: 100%;
     overflow-y: auto;
 }
-.calendar .calendar-header .day-header{
+
+.calendar .calendar-header .day-header {
     width: 100%;
     text-align: center;
     display: flex;
@@ -24,21 +27,23 @@
     font-weight: bold;
 }
 
-.calendar .calendar-header .day-header .day-name{
-    width: 100%;
-    text-align: center;
-}
-.calendar .calendar-header .day-header .date{
+.calendar .calendar-header .day-header .day-name {
     width: 100%;
     text-align: center;
 }
 
-.calendar .calendar-header .day-header{
+.calendar .calendar-header .day-header .date {
+    width: 100%;
+    text-align: center;
+}
+
+.calendar .calendar-header .day-header {
     border-bottom: 1px solid black;
     width: 100%;
     text-align: center;
 }
-.calendar .day-column{
+
+.calendar .day-column {
     width: 100%;
     height: max-content;
     display: flex;
@@ -47,14 +52,15 @@
     align-items: center;
 }
 
-.calendar .day-column .day-hours{
+.calendar .day-column .day-hours {
     width: 100%;
     height: max-content;
     display: table;
     flex-direction: column;
     border-bottom: 1px solid black;
 }
-.calendar .day-column .day-hours .time-cell{
+
+.calendar .day-column .day-hours .time-cell {
     width: 100%;
     height: 100%;
     display: table;
@@ -66,17 +72,20 @@
     flex: 0 0 auto;
 }
 
-.calendar .day-column .day-hours .hour-cell{
+.calendar .day-column .day-hours .hour-cell {
     border-bottom: 1px solid rgba(128, 128, 128, 0.486);
 }
 
 
-.calendar .day-column .day-hours .hour-title-cell{
+.calendar .day-column .day-hours .hour-title-cell {
     display: flex;
     align-items: center;
     border-bottom: 0px;
+    border-bottom: 1.5px solid var(--coral);
+    background-color: var(--beigh);
 }
-.calendar .day-column .day-hours .event{
+
+.calendar .day-column .day-hours .event {
     height: 100%;
     width: 100%;
     background-color: rgb(231, 55, 84);
@@ -90,10 +99,6 @@
     /*box-shadow: 5px 10px #888888;*/
 }
 
-.calendar .day-column .day-hours .event .event-title{
+.calendar .day-column .day-hours .event .event-title {}
 
-}
-
-.calendar .day-column .day-hours .event .event-description{
-
-}
+.calendar .day-column .day-hours .event .event-description {}
