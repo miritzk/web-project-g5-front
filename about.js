@@ -1,14 +1,14 @@
 // -- stop motion exp -- //
 
-var images = ["images/aboutPic2.JPG",
-             "images/aboutPic3.JFIF", 
-             "images/aboutPic4.JPG",
-             "images/aboutPic5.JFIF",
-             "images/aboutPic6.JFIF",
-             "images/aboutPic7.JFIF", 
-             "images/aboutPic8.JFIF",
-             "images/aboutPic9.JPG",
-             "images/aboutPic10.JPG"];
+var images = ["images/aboutPic2.jpeg",
+             "images/aboutPic3.jpeg", 
+             "images/aboutPic4.jpeg",
+             "images/aboutPic5.jpeg",
+             "images/aboutPic6.jpeg",
+             "images/aboutPic7.jpeg", 
+             "images/aboutPic8.jpeg",
+             "images/aboutPic9.jpeg",
+             "images/aboutPic10.jpeg"];
 var i = 0;
 
 function stopmotionloop() {

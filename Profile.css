@@ -1,108 +1,50 @@
-.content {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    color: #927e7b;
-    padding-top: 20px;
-    background-image: url(background.jpg);
-    background-size: 1500px;
-
-
-}
-.UserHeader {
-    color: black;
-    text-align: center;
-
-}
-
-.content .profile_general_container {
+.profile_general_container {
     display: grid;
-    grid-template-areas:
-                'tab_content menu1';
+    grid-template-areas: 'tab_content menuTabs';
     grid-template-columns: auto 250px;
-    grid-template-rows: auto auto;
-    text-align: center;
-    height: 700px;
-    background-image: url(background.jpg);
-    background-size: 1500px;
-
-
-}
-
-.content .menuTabs {
-    grid-area: menu1;
-    background-size: 5000px;
-
-}
-
-.content .profile_general_container .menuTabs .tab {
-    background-color: #c9afa7;
-    border-radius: 8px;
-    width: 150px;
-    height: 240px;
-    margin: 200px 40px;
-
-
-}
-
-
-.content .tabcontent {
-    grid-area: tab_content;
-    align-items: center;
-    padding: 0px 200px;
-    width: 600px;
-    height: 440px;
-    margin: 120px 100px;
-    border-radius: 10px;
     border: 1px solid #c9afa7;
-
-
 }
 
-.content .tabscontent {
-    background-size: 1500px;
-
+.menuTabs {
+    grid-area: menuTabs;
+    background-color: #c9afa7;
+    align-items: center;
+    justify-content: center;
 }
 
-.content .tabcontent .tab {
-    border-radius: 10px;
-    width: 150px;
-    height: 240px;
-    margin: 200px 40px;
-
-
+.menuTabs .tablinks {
+    font-family: Rubik, sans-serif;
 }
 
-
-.content .menuTabs .tab button {
-    display: block;
+.menuTabs button {
     background-color: inherit;
-    color: black;
     padding: 30px 16px;
     width: 100%;
     border: none;
     outline: none;
-    cursor: pointer;
     transition: 0.3s;
     text-align: center;
     font-size: 18px;
     color: #fdf7f5;
-    /border-radius: 10px;/
-
 }
 
+.menuTabs button:hover {
+    background-color: #ad948c;
+    cursor: pointer;
+}
 
-/* Change background color of buttons on hover */
-.content .menuTabs .tab button:hover {
+.menuTabs button.active {
     background-color: #ad948c;
 }
 
-/* Create an active/current "tab button" class */
-.content .menuTabs .tab button.active {
-    background-color: #ad948c;
+.tabcontent {
+    grid-area: tab_content;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: var(--beigh);
 }
 
-.content .profile_general_container .tabscontent .tabcontent h3 {
+.tabcontent h3 {
     margin: 10px;
     padding: 10px;
     color: #927e7b;
@@ -111,45 +53,26 @@
     position: center;
 }
 
-.content .profile_general_container .tabscontent .tabcontent hr {
-    border: 1px solid #c9afa7;
+.tabcontent hr {
+    border: 1px solid #ad948c;
 }
 
-
-.content .tabcontent_grid_container {
-
+.my_details {
     display: grid;
-    grid-template-areas:
-                'bottom bottom'
-                'update details';
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    text-align: center;
-
+    justify-content: center;
 }
 
-.content .divBut {
-    grid-area: bottom;
-
+.my_details table td {
+    padding: 10px 20px;
 }
 
-.content .divDet {
-    grid-area: details;
-
-}
-
-.content .divUp {
-    grid-area: update;
-
-
-}
-
-.content .profile_general_container .tablinks{
-    font-family: Rubik, sans-serif;
+.row_head {
+    font-weight: bold;
 }
 
 
-.content .profile_general_container .tabscontent .tabcontent .upButton {
+
+.profile_general_container .tabcontent .upButton {
     margin: 10px;
     padding: 10px;
     justify-content: space-evenly;
@@ -160,11 +83,11 @@
     border-radius: 10px;
 }
 
-.content .profile_general_container .tabscontent .tabcontent .upButton:hover {
+.profile_general_container .tabcontent .upButton:hover {
     background-color: #ad948c;
 }
 
-.content .profile_general_container .tabscontent .tabcontent .tabcontent_grid_container .divUp .forms .container .update {
+.profile_general_container .tabcontent .update_details .forms .update {
     display: block;
     width: 250px;
     height: 20px;

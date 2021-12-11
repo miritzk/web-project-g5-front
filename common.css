@@ -20,7 +20,6 @@ body {
 .page_content {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
     margin: 50px 100px;
 }
 
