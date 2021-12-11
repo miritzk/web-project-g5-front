@@ -7,17 +7,11 @@
 }
 
 .header {
-    font-size: 150px;
     animation: fadeIn linear 7s;
     -webkit-animation: fadeIn linear 7s;
     -moz-animation: fadeIn linear 7s;
     -o-animation: fadeIn linear 7s;
-    -ms-animation: fadeIn linear 7s;
-    color: white;
-    text-align: center;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    margin: 70px;
-    
+    -ms-animation: fadeIn linear 7s;    
   }
   
   @keyframes fadeIn {
