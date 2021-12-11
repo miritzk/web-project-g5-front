@@ -75,108 +75,95 @@
 
             <!-- menuTabs -->
             <div class="menuTabs">
-                <button class="tablinks" onclick="openTab(event, 'My Details')">My Details</button>
-                <button class="tablinks" onclick="openTab(event, 'Payment methods')">Payment methods</button>
-                <button class="tablinks" onclick="openTab(event, 'My orders')">My orders</button>
+                <button class="tablinks" onclick="openTab(event, 'My_Details')">My Details</button>
+                <button class="tablinks" onclick="openTab(event, 'Payment_Methods')">Payment methods</button>
+                <button class="tablinks" onclick="openTab(event, 'My_Orders')">My orders</button>
             </div>
             <!-- end of menuTabs -->
 
-            <div id="My details" class="tabcontent">
+            <div id="My_Details" class="tabcontent">
                 <h3>My Details</h3>
-                <hr style="color: #ad948c">
-                <div class="tabcontent_grid_container">
-                    <div class="divDet">
-                        <p>
-                            Carmel Ben-Shoshan
-                            <br><br>
-                            carmela@gmail.com
-                            <br><br>
-                            0543327345
-                            <br><br>
-                            Nofit
-                            <br><br>
-                            Gilboa
-                            <br><br>
-                            60
-                            <br><br>
-                            360010
-                            <br><br>
+                <hr>
+                <div class="my_details">
+                    <table>
+                        <tr>
+                            <td class="row_head">Full Name:</td>
+                            <td>Carmel Ben-Shoshan</td>
+                        </tr>
+                        <tr>
+                            <td class="row_head">Email:</td>
+                            <td>carmela@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td class="row_head">Phone Number:</td>
+                            <td>0543327345</td>
+                        </tr>
+                        <tr>
+                            <td class="row_head">City:</td>
+                            <td>Nofit</td>
+                        </tr>
+                        <tr>
+                            <td class="row_head">Street:</td>
+                            <td>Gilboa</td>
+                        </tr>
+                        <tr>
+                            <td class="row_head">Apt. Number:</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td class="row_head">Zipcode:</td>
+                            <td>360010</td>
+                        </tr>
+                    </table>
+                </div>
 
+                <div class="update_details">
+                    <input type="button" class="upButton" id="updateDetails" value="Update Details"
+                        onclick="ShowForm('update_details_form', 'my_details', 'updateDetails')">
+
+                    <form class="forms" id="update_details_form" style="display: none">
                         <table>
                             <tr>
-                                <td>Full Name:</td>
-                                <td>Carmel Ben-Shoshan</td>
+                                <td class="row_head">Full Name:</td>
+                                <td><input class="update" name="name" placeholder="Fill name" required
+                                        onkeyup="updateText('name')"></td>
                             </tr>
                             <tr>
-                                <td>Full Name:</td>
-                                <td>Carmel Ben-Shoshan</td>
+                                <td class="row_head">Email:</td>
+                                <td><input class="update" id="email" type="email" name="email" placeholder="Enter email"
+                                        required></td>
+                            </tr>
+                            <tr>
+                                <td class="row_head">Phone Number:</td>
+                                <td><input class="update" name="phone" type="tel" placeholder="Enter phone number"
+                                        required></td>
+                            </tr>
+                            <tr>
+                                <td class="row_head">City:</td>
+                                <td><input class="update" name="city" placeholder="Enter city" required></td>
+                            </tr>
+                            <tr>
+                                <td class="row_head">Street:</td>
+                                <td><input class="update" name="street" placeholder="Enter street" required></td>
+                            </tr>
+                            <tr>
+                                <td class="row_head">Apt. Number:</td>
+                                <td><input class="update" name="apartment" placeholder="Enter apt. number" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="row_head">Zipcode:</td>
+                                <td><input class="update" name="zipcode" placeholder="Enter zipcode" required></td>
                             </tr>
                         </table>
-                    </div>
 
-                    <div class="divUp" style="text-align: left">
-
-                        <div class="divDet2" id="divDet2" style="text-align: center ">
-                            <p style="direction: ltr; margin:20px 10px ">
-                            <p id="name"> First and last name:</p>
-                            Email:
-                            <br><br>
-                            Phone Number:
-                            <br><br>
-                            City:
-                            <br><br>
-                            Street:
-                            <br><br>
-                            Apt. Number:
-                            <br><br>
-                            Zipcode:
-                            <br><br>
-                        </div>
-
-                        <div class="divBut">
-                            <input type="button" class="upButton" id="updateDetails" value="Update Details"
-                                onclick="ShowForm('form1', 'divDet2', 'updateDetails')">
-                        </div>
-
-                        <form dir="ltr" class="forms" id="form1" style="display: none">
-                            <div class="container">
-
-                                <br>
-                                <input class="update" name="name" placeholder="Fill name" required
-                                    onkeyup="updateText('name')"><br>
-
-                                <br>
-                                <input class="update" id="email" type="email" name="mail" placeholder="Enter email "
-                                    required><br>
-
-                                <br>
-                                <input class="update" name="phone" type="number" placeholder="Enter phone number"
-                                    required><br>
-
-                                <br>
-                                <input class="update" name="city" placeholder="Enter city" required><br>
-
-                                <br>
-                                <input class="update" name="street" placeholder=" Enter street " required><br>
-
-                                <br>
-                                <input class="update" name="apartment" placeholder="  Enter apt. number " required><br>
-
-                                <br>
-                                <input class="update" name="mikud" placeholder="Enter zipcode  " required><br>
-
-                                <button class="upButton" type="submit" onclick="updateText('name')"
-                                    style="margin: 30px 80px; width: 80px">update
-                                </button>
-
-                            </div>
-                        </form>
-                    </div>
+                        <button class="upButton" type="submit" onclick="updateText('name')">update</button>
+                    </form>
                 </div>
             </div>
 
 
-            <div id="Payment methods" class="tabcontent" style="display: none">
+            <div id="Payment_Methods" class="tabcontent" style="display: none">
                 <h3>Payment methods</h3>
                 <hr style="color: #ad948c">
                 <div class="tabcontent_grid_container" style="padding: 20px">
@@ -235,7 +222,7 @@
                 </div>
             </div>
 
-            <div id="My orders" class="tabcontent" style="display: none">
+            <div id="My_Orders" class="tabcontent" style="display: none">
                 <h3>My orders</h3>
                 <hr style="color: #ad948c"><br><br>
                 <a href="previous%20resrevations.html" style="background-color: #fdf7f5"> הזמנה שבוצעה בתאריך:
