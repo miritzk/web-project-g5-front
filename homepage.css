@@ -2,8 +2,33 @@ body {
     background-image: linear-gradient(to bottom, rgba(56, 55, 55, 0.7), rgba(56, 55, 55,  0.7)), url("images/pilatespic.png");;
  background-color: #cccccc;
 }
+
 .header {
     color: white;
     text-align: center;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    margin: 70px;
+}
+
+.home_div {
+    background-color: rgba(255, 255, 255, 0.644);
+    border-radius: 15px;
+    padding: 20px 30px;
+    margin-top: 60px;
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    font-size: 20px;
+}
+
+.home_div h2 {
+    margin-bottom: 30px;
+}
+
+.home_div a {
+    color: var(--darkcoral);
+    text-decoration: unset;
+}
+
+.home_div a:hover {
+    color: var(--coral);
 }
