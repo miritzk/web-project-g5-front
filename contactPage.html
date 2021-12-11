@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="common.css">
   <link rel="stylesheet" href="contactPage.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <title>Document</title>
 </head>
@@ -57,7 +60,7 @@
     </div>
   </nav>
   <!------------------------------------------- end menu ------------------------------------------->
-  
+
 
   <section class="page_content contact_grid">
     <!-- contact header -->
@@ -112,21 +115,25 @@
         <div class="content" id="message_header">
           <h3>Send Message</h3>
         </div>
-        <!-- full name -->
-        <div class="inputBox" id='user_full_name'>
-          <span>Full name:</span>
-          <input type="text" name="input_full_name" id="input_full_name" required="required">
-        </div>
-        <!-- email -->
-        <div class="inputBox" id='user_email'>
-          <span>Email:</span>
-          <input type="text" name="input_email" id="input_email" required="required">
-        </div>
-        <!-- message box -->
-        <div class="inputBox" id='user_message'>
-          <span>Type your message:</span><br>
-          <textarea name="input_message" id="input_message" required="required"></textarea>
-        </div>
+        <table>
+          <tr>
+            <!-- full name -->
+            <td>Full Name:</td>
+            <td><input type="text" name="input_full_name" id="input_full_name" required="required"></td>
+          </tr>
+          <tr>
+            <!-- email -->
+            <td>Email:</td>
+            <td><input type="text" name="input_email" id="input_email" required="required"></td>
+          </tr>
+          <tr>
+            <!-- message box -->
+            <td colspan="2">Type Your Message:</td>
+          </tr>
+          <tr>
+            <td colspan="2"><textarea name="input_message" id="input_message" required="required"></textarea></td>
+          </tr>
+        </table>
         <!-- send btn -->
         <div class="inputBox" id="send_btn">
           <input class="btn_general" type="submit" name="" value="Send">
