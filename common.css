@@ -11,6 +11,7 @@
     --mint_light: #f5f8f6e0;
     --beigh: #FBF7F0;
     --darkcoral: #9e4334;
+    --darkmint: #abbdb0;
 }
 
 body {
@@ -20,7 +21,6 @@ body {
 .page_content {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
     margin: 50px 100px;
 }
 

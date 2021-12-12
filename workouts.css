@@ -1,22 +1,15 @@
 .grid {
     display: grid;
     grid-gap: 20px;
-    grid-template-areas: 
-    "w_0 w_0 w_0 w_0 w_0 w_0"
-    "w_1 w_1 w_1 w_2 w_2 w_2"
-    "w_3 w_3 w_3 w_4 w_4 w_4";
+    grid-template-areas:
+        "w_0 w_0 w_0 w_0 w_0 w_0"
+        "w_1 w_1 w_1 w_2 w_2 w_2"
+        "w_3 w_3 w_3 w_4 w_4 w_4";
 }
 
 h3 {
     text-align: center;
     margin-bottom: 20px;
-}
-
-.workout img {
-    max-width: 100%;
-    max-height: 100%; 
-    object-fit: contain;
-    border-radius: 15px;
 }
 
 .workout {
@@ -26,15 +19,38 @@ h3 {
     box-shadow: 5px 5px rgba(77, 60, 39, 0.5);
     font-size: 20px;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .workout:hover {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.workout a {
+    color: var(--coral);
+}
+
+.workout a:hover {
+    color: var(--peach);
+}
+
+.workout_pic {
+    text-align: center;
+}
+
+.workout_pic img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
 #w_0 {
     grid-area: w_0;
-    margin-left: 25px;
+    margin: 0 25px;
+    text-align: center;
 }
 
 
@@ -65,12 +81,12 @@ h3 {
 
 @media (max-width: 800px) {
     .grid {
-        grid-template-areas: 
-        "w_0"
-        "w_1"
-        "w_2"
-        "w_3"
-        "w_4";
+        grid-template-areas:
+            "w_0"
+            "w_1"
+            "w_2"
+            "w_3"
+            "w_4";
     }
 
     #w_0 {
@@ -80,19 +96,19 @@ h3 {
     #w_1 {
         margin: 0 25px;
     }
-    
+
     #w_2 {
         margin: 0 25px;
     }
-    
+
     #w_3 {
         margin: 0 25px;
     }
-    
+
     #w_4 {
         margin: 0 25px;
     }
-  }
+}
 
 .btn_redorded {
     border: unset;
@@ -109,21 +125,15 @@ h3 {
 }
 
 .head {
-    font-size: 150px;
     animation: fadeIn linear 7s;
     -webkit-animation: fadeIn linear 7s;
     -moz-animation: fadeIn linear 7s;
     -o-animation: fadeIn linear 7s;
     -ms-animation: fadeIn linear 7s;
-    color: black;
-    text-align: center;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    margin: 70px;
-    
-  }
+}
   
-  @keyframes fadeIn {
+@keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
-  }
+}
   

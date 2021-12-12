@@ -10,71 +10,80 @@
   <link rel="stylesheet" href="common.css">
   <link rel="stylesheet" href="signup.css">
   <script src="signup.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
   <title>Sign Up</title>
 </head>
 
 <body>
 
- <!------------------------------------------- menu ------------------------------------------->
- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="homepage.html">
-      <img src="images/pilates.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-      Michal Pilates
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <!------------------------------------------- menu ------------------------------------------->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="homepage.html">
+        <img src="images/pilates.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        Michal Pilates
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="PriceList.html">Prices</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="workouts.html">Workouts</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="calendar.html">Calendar</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contactPage.html">Contact Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="LogIn.html">Log In</a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="PriceList.html">Prices</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="workouts.html">Workouts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="calendar.html">Calendar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactPage.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="LogIn.html">Log In</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-<!------------------------------------------- end menu ------------------------------------------->
+  </nav>
+  <!------------------------------------------- end menu ------------------------------------------->
 
   <!--------------------------------- Content --------------------------------->
   <div class="content">
-    <form action="Profile.html" method='post'>
+    <form action="Profile.html" method='post' onsubmit="return SignUp()">
       <h1>Sign up</h1>
       <p><br> Welcome to Michal's Pilates! <br>
-         Please fill in the following details:</p>
+        Please fill in the following details:</p>
 
       <label class="" for="name"><b>Full name:</b></label><br>
       <input class="user_input" name="name" id="name" placeholder="Enter name and last name" required type="text"><br>
 
       <label class="" for="email"><b>Email Address:</b></label><br>
-      <input class="user_input" name="email" id="email" placeholder="Enter your email address" required type="email" pattern="\S+@\S+\.\S+"><br>
+      <input class="user_input" name="email" id="email" placeholder="Enter your email address" required type="email"
+        pattern="\S+@\S+\.\S+"><br>
 
       <label class="" for="psw"><b>Password: (at least 6 characters)</b></label><br>
-      <input class="user_input" name="psw" id="psw" placeholder="Enter your password" required type="password" minlength="6" onkeyup="checkpsw()"><br>
+      <input class="user_input" name="psw" id="psw" placeholder="Enter your password" required type="password"
+        minlength="6" onkeyup="checkpsw()"><br>
 
       <label class="" for="psw-repeat"><b>Verify Password:</b></label><br>
-      <input class="user_input" name="psw-repeat" id="psw-repeat" placeholder="Repeat the password" required type="password" minlength="6" onkeyup="checkpsw()"><br>
+      <input class="user_input" name="psw-repeat" id="psw-repeat" placeholder="Repeat the password" required
+        type="password" minlength="6" onkeyup="checkpsw()"><br>
 
       <label class="" for="phone"><b>Phone Number:</b></label><br>
       <input class="user_input" name="phone" id="phone" placeholder="Enter a phone number" required type="phone"><br>
@@ -86,16 +95,19 @@
       <input class="user_input" name="street" id="street" placeholder="Enter Street" required type="text"><br>
 
       <label class="" for="apartment"><b>Apartment number:</b></label><br>
-      <input class="user_input" name="apartment" id="apartment" placeholder="Enter an apartment number" required type="text"><br>
+      <input class="user_input" name="apartment" id="apartment" placeholder="Enter an apartment number" required
+        type="text"><br>
 
       <label class="" for="postalcode"><b>Postal Code:</b></label><br>
-      <input class="user_input" name="postalcode" id="postalcode" placeholder="Enter postal code" required type="text"><br>
-      
+      <input class="user_input" name="postalcode" id="postalcode" placeholder="Enter postal code" required
+        type="text"><br>
+
       <!-- error message box -->
       <span id='message'></span><br><br>
-     
+
       <label class="container_form">
-        <input name="remember" style="margin-bottom:15px" type="checkbox"> I confirm receipt of news and updates by email
+        <input name="remember" style="margin-bottom:15px" type="checkbox"> I confirm receipt of news and updates by
+        email
       </label>
 
       <!-- sign up btn -->
