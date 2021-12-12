@@ -1,8 +1,10 @@
- <html lang="en">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Welcome!</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="Profile.css">
@@ -10,258 +12,209 @@
     <script>
         tabcontent[1].style.display = "none";
         tabcontent[2].style.display = "none";
-        forms[1].style.display = "none";
-
     </script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
 </head>
+
 <body>
-<!------------------------------------------- menu ------------------------------------------->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="images/pilates.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            Michal Pilates
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-            <a class="nav-link" href="homepage.html">Home</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="about.html">About us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="PriceList.html">Prices</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="workouts.html">Workouts</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="calendar.html">Calendar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactPage.html">Contact Us</a>
-           </li>
-            <li class="nav-item">
-                <a class="nav-link" href="LogIn.html">Log In</a>
-            </li>
-        </ul>
+    <!------------------------------------------- menu ------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="homepage.html">
+                <img src="images/pilates.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                Michal Pilates
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PriceList.html">Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="workouts.html">Workouts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calendar.html">Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactPage.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="LogIn.html">Log In</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-  </nav>
-  <!------------------------------------------- end menu ------------------------------------------->
-<div class="Grid_container">
- 
-        </div>
-   
-        <div class="UserHeader" id="UserHeader">
-            <h2>My Profile</h2>
-          </div>
-          <div class="content">
+    </nav>
+    <!------------------------------------------- end menu ------------------------------------------->
+
+    <div class="page_content">
+        <h2>My Profile</h2>
         <div class="profile_general_container">
 
+            <!-- menuTabs -->
             <div class="menuTabs">
-                <div dir="rtl" class="tab">
-                    <button class="tablinks" onclick="openTab(event, 'My Details')"
-                            style="border-top-left-radius: 8px; border-top-right-radius: 8px"> My Details
-                    </button>
-                    <button class="tablinks" onclick="openTab(event, 'אמצעי תשלום')">אמצעי תשלום</button>
-                    <button class="tablinks" onclick="openTab(event, 'ההזמנות שלי')"
-                            style="border-bottom-left-radius: 8px; border-bottom-right-radius: 8px">ההזמנות שלי
-                    </button>
+                <button class="tablinks" onclick="openTab(event, 'My_Details')">My Details</button>
+                <button class="tablinks" onclick="openTab(event, 'Payment_Methods')">Payment methods</button>
+                <button class="tablinks" onclick="openTab(event, 'My_Orders')">My orders</button>
+            </div>
+            <!-- end of menuTabs -->
+
+            <div id="My_Details" class="tabcontent">
+                <h3>My Details</h3>
+                <hr>
+                <div class="info_container">
+                    <table>
+                        <tr>
+                            <td class="row_head">Full Name:</td>
+                            <td><input class="nonEdit" value="Carmel Ben-Shoshan" name="name" id="inputFullName"
+                                    disabled required/></td>
+                        </tr>
+                        <tr>
+                            <td class="row_head">Email:</td>
+                            <td><input class="nonEdit" value="carmela@gmail.com" name="name" id="inputEmail" disabled required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="row_head">Phone Number:</td>
+                            <td><input class="nonEdit" value="0543327345" name="phone_number" id="inputPhoneNumber"
+                                    disabled required/></td>
+                        </tr>
+                        <tr>
+                            <td class="row_head">City:</td>
+                            <td><input class="nonEdit" value="Nofit" name="city" id="inputCity" disabled required/></td>
+                        </tr>
+                        <tr>
+                            <td class="row_head">Street:</td>
+                            <td><input class="nonEdit" value="Gilboa" name="street" id="inputStreet" disabled required/></td>
+                        </tr>
+                        <tr>
+                            <td class="row_head">Apt. Number:</td>
+                            <td><input class="nonEdit" value="60" name="aprtNum" id="inputAprtNum" disabled required/></td>
+                        </tr>
+                        <tr>
+                            <td class="row_head">Zipcode:</td>
+                            <td><input class="nonEdit" value="60" name="zipcode" id="inputZipCode" disabled required/></td>
+                        </tr>
+                        <tr>
+                            <td class="row_head">Password:</td>
+                            <td><input class="nonEdit" type="password" value="123456" name="password" id="inputPassword" disabled required/></td>
+                        </tr>
+                    </table>
+                    <input type="button" class="upButton" id="updateDetails" value="Update Details"
+                        onclick="editForm()">
+                    <input type="button" class="upButton" id="submitUpdate" value="Submit Update" onclick="submitForm()"
+                        hidden>
                 </div>
+            </div>
 
 
-            </div> <!--End of menuTabs-->
-
-            <div class="tabscontent">
-
-                <div id=" My details" class="tabcontent" style="text-align: center">
-
-                    <h3>  My details</h3>
-                    <hr style="color: #ad948c">
-                    <div class="tabcontent_grid_container">
-
-
-                        <div class="divDet" style="text-align: right">
-                            <p style="direction: ltr; margin:20px 50px ">
-                              Carmel Ben-Shoshan
-                                <br><br>
-                                carmela@gmail.com
-                                <br><br>
-                                0543327345
-                                <br><br>
-                                Nofit
-                                <br><br>
-                                Hatamar
-                                <br><br>
-                                 24
-                                <br><br>
-                             0000
-                                <br><br>
-                        </div>
-
-                        <div class="divUp" style="text-align: left">
-
-                            <div class="divDet2" id="divDet2" style="text-align: center ">
-                                <p style="direction: ltr; margin:20px 10px ">
-                                <p id="name">  First and last name:</p> 
-                               Email:
-                                <br><br>
-                               Phone Number:
-                                <br><br>
-                                City:
-                                <br><br>
-                              Street:
-                                <br><br>
-                             Apt. Number: 
-                                <br><br>
-                                Zipcode: 
-                                <br><br>
-                            </div>
-
-                            <div class="divBut">
-                                <input type="button" class="upButton" id="updateDetails" value="Update Details"
-                                       onclick="ShowForm('form1', 'divDet2', 'updateDetails')">
-                            </div>
-
-                            <form dir="ltr" class="forms" id="form1" style="display: none">
-                                <div class="container">
-
-                                    <br>
-                                    <input class="update" name="name" placeholder="Fill name" required
-                                           onkeyup="updateText('name')"><br>
-
-                                    <br>
-                                    <input class="update" id="email" type="email" name="mail" placeholder="Enter email "
-                                           required><br>
-
-                                    <br>
-                                    <input class="update" name="phone" type="number" placeholder="Enter phone number"
-                                           required><br>
-
-                                    <br>
-                                    <input class="update" name="city" placeholder="Enter city" required><br>
-
-                                    <br>
-                                    <input class="update" name="street" placeholder=" Enter street " required><br>
-
-                                    <br>
-                                    <input class="update" name="apartment" placeholder="  Enter apt. number " required><br>
-
-                                    <br>
-                                    <input class="update" name="mikud" placeholder="Enter zipcode  " required><br>
-
-                                    <button class="upButton" type="submit" onclick="updateText('name')"
-                                            style="margin: 30px 80px; width: 80px">עדכן
-                                    </button>
-
-                                </div>
-                            </form>
-                        </div>
+            <div id="Payment_Methods" class="tabcontent" style="display: none">
+                <h3>Payment methods</h3>
+                <hr style="color: #ad948c">
+                <div class="tabcontent_grid_container">
+                    <div class="info_container">
+                        <table>
+                            <tr>
+                                <td class="row_head">
+                                    Credit Card:
+                                </td>
+                                <td>
+                                    <input type="text" id="inputCreditCard" value="4580-1234-1234-1234" class="nonEdit"
+                                        disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="row_head">
+                                    Expiration Date:
+                                </td>
+                                <td>
+                                    <input type="text" value="03/25" id="inputExpirationDate" class="nonEdit" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="row_head">
+                                    CVV:
+                                </td>
+                                <td>
+                                    <input type="text" value="547" id="inputCVV" class="nonEdit" disabled>
+                                </td>
+                            </tr>
+                        </table>
+                        <input type="button" class="upButton" id="updateCardInfo" value="Update"
+                            onclick="editCardInfo()">
+                        <input type="button" class="upButton" id="submitCardInfo" value="Submit Update"
+                            onclick="submitCardInfo()" hidden>
                     </div>
                 </div>
+            </div>
 
-
-                <div id="אמצעי תשלום" class="tabcontent" style="display: none">
-                    <h3>אמצעי תשלום</h3>
-                    <hr style="color: #ad948c">
-                    <div class="tabcontent_grid_container" style="padding: 20px">
-
-                        <div class="divBut" style="text-align: center">
-                            <input type="button" class="upButton" id="updateDetails2" value="עדכן פרטים" 
-                                   onclick="ShowForm('form2', 'divDet3', 'updateDetails2')">
-                        </div>
-
-                        <div class="divDet" style="text-align: right">
-                            <p style="direction: rtl; margin:20px 50px ">
-                                מספר כרטיס:
-                                <br><br>
-                                סוג כרטיס:
-                                <br><br>
-                                תוקף:
-                                <br><br>
-
-                        </div>
-
-                        <div class="divUp" style="text-align: right">
-
-                            <div class="divDet2" id="divDet3" style="text-align: center ">
-                                <p style="direction: rtl; margin:20px 10px ">
-                                    <span id="UserEmail">4580-1234-1234-XXXX</span>
-                                    <br><br>
-                                    visa
-                                    <br><br>
-                                    03/25
-                                    <br><br>
-                            </div>
-
-
-                            <form dir="rtl" class="forms" id="form2" style="display: none">
-                                <div class="container">
-
-                                    <br>
-                                    <input class="update" id="cardNum" type="number" name="cardNum"
-                                           placeholder="הכנס מספר כרטיס" required><br>
-
-                                    <br>
-                                    <input class="update" id="cardType" name="cardType" placeholder="הכנס סוג כרטיס"
-                                           onkeyup="updateText(this)" required><br>
-
-                                    <br>
-                                    <input class="update" id="due" name="due" placeholder="הכנס תוקף" required><br>
-
-
-                                    <button class="upButton" type="submit" onclick="try1()"
-                                            style="margin: 30px 80px; width: 80px">עדכן
-                                    </button>
-
-                                </div>
-                            </form>
-                        </div>
+            <div id="My_Orders" class="tabcontent" style="display: none">
+                <h3>My orders</h3>
+                <hr>
+                <div class="tabcontent_grid_container">
+                    <div class="info_container">
+                        <table>
+                            <tr>
+                                <th>Order Id</th>
+                                <th>Order Date</th>
+                                <th>Product Type</th>
+                                <th>Order Price</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>12/11/21</td>
+                                <td>Individual training</td>
+                                <td>40 ILS</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>14/11/21</td>
+                                <td>Individual training</td>
+                                <td>40 ILS</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <div id="ההזמנות שלי" class="tabcontent" style="display: none">
-                    <h3>ההזמנות שלי</h3>
-                    <hr style="color: #ad948c"><br><br>
-                    <a href="previous%20resrevations.html" style="background-color: #fdf7f5"> הזמנה שבוצעה בתאריך: 24.12.2020</a>
-
-                </div>
-
-
-            </div> <!--End of tabcontent-->
-
-
-        </div> <!--End of profile_general_container-->
-
-
-    </div> <!--End of content div-->
-
-    <!------------------------------------------- footer ------------------------------------------->
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <div class="col-md-4 d-flex align-items-center">
-      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-      </a>
-      <span class="text-muted">&copy; 2021 Michal Pilates</span>
-    </div>
-    <div class="social-wrap">
-        <div><a class="text-muted" href="https://www.facebook.com/">
-          <img src="images/facebook.svg" alt="" width="30" height="24">
-        </a></div>
-        <div><a class="text-muted" href="https://www.instagram.com/">
-          <img src="images/instagram.svg" alt="" width="30" height="24">
-        </a></div>
-        <div ><a class="text-muted" href="https://www.youtube.com/">
-          <img src="images/youtube.svg" alt="" width="30" height="24">
-        </a></div>
-  </div>
-  </footer>
-  <!------------------------------------------- end footer ------------------------------------------->
+        <!------------------------------------------- footer ------------------------------------------->
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+                <span class="text-muted">&copy; 2021 Michal Pilates</span>
+            </div>
+            <div class="social-wrap">
+                <div><a class="text-muted" href="https://www.facebook.com/">
+                        <img src="images/facebook.svg" alt="" width="30" height="24">
+                    </a></div>
+                <div><a class="text-muted" href="https://www.instagram.com/">
+                        <img src="images/instagram.svg" alt="" width="30" height="24">
+                    </a></div>
+                <div><a class="text-muted" href="https://www.youtube.com/">
+                        <img src="images/youtube.svg" alt="" width="30" height="24">
+                    </a></div>
+            </div>
+        </footer>
+        <!------------------------------------------- end footer ------------------------------------------->
