@@ -29,6 +29,7 @@ function editForm() {
     document.getElementById("inputStreet"),
     document.getElementById("inputAprtNum"),
     document.getElementById("inputZipCode"),
+    document.getElementById("inputPassword")
   ]
   arr.forEach((element) => {
     element.disabled = false;
@@ -47,6 +48,7 @@ function submitForm() {
     document.getElementById("inputStreet"),
     document.getElementById("inputAprtNum"),
     document.getElementById("inputZipCode"),
+    document.getElementById("inputPassword")
   ]
   arr.forEach((element) => {
     element.disabled = true;
