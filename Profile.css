@@ -4,10 +4,12 @@
     grid-template-columns: auto 250px;
     border: 1px solid #c9afa7;
 }
-.nonEdit{
+
+.nonEdit {
     background-color: transparent;
     border: none;
 }
+
 .menuTabs {
     grid-area: menuTabs;
     background-color: #c9afa7;

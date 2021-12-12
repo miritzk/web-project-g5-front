@@ -33,15 +33,18 @@ function SignUp() {
 
     if (!email.match(emailRegex)) {
         alert('Email is not valid');
-        return false;    }
+        return false;
+    }
 
     if (password.length < 6) {
         alert('Password must be at least 8 characters long');
-        return false;    }
+        return false;
+    }
 
     if (!phone.match(phoneRegex)) {
         alert('Phone number must contain only numbers and must be 10 digits long');
-        return false;    }
+        return false;
+    }
 
     if (!city.match(nameRegex)) {
         alert('City must contain only letters');
@@ -50,7 +53,8 @@ function SignUp() {
 
     if (!street.match(nameRegex)) {
         alert('Street must contain only letters');
-        return false;    }
+        return false;
+    }
 
     if (!apartmentNumber.match(numbersRegex)) {
         alert('Apartment number must contain only numbers');

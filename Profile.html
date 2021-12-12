@@ -27,42 +27,42 @@
 
 <body>
     <!------------------------------------------- menu ------------------------------------------->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="homepage.html">
-        <img src="images/pilates.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-        Michal Pilates
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="homepage.html">
+                <img src="images/pilates.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                Michal Pilates
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="PriceList.html">Prices</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="workouts.html">Workouts</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="calendar.html">Calendar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactPage.html">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="LogIn.html">Log In</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!------------------------------------------- end menu ------------------------------------------->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PriceList.html">Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="workouts.html">Workouts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calendar.html">Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactPage.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="LogIn.html">Log In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!------------------------------------------- end menu ------------------------------------------->
 
     <div class="page_content">
         <h2>My Profile</h2>
@@ -83,37 +83,40 @@
                     <table>
                         <tr>
                             <td class="row_head">Full Name:</td>
-                            <td><input class="nonEdit" value="Carmel Ben-Shoshan" name="name" id="inputFullName" disabled/></td>
+                            <td><input class="nonEdit" value="Carmel Ben-Shoshan" name="name" id="inputFullName"
+                                    disabled /></td>
                         </tr>
                         <tr>
                             <td class="row_head">Email:</td>
-                            <td><input class="nonEdit" value="carmela@gmail.com" name="name" id="inputEmail" disabled/></td>
+                            <td><input class="nonEdit" value="carmela@gmail.com" name="name" id="inputEmail" disabled />
+                            </td>
                         </tr>
                         <tr>
                             <td class="row_head">Phone Number:</td>
-                            <td><input class="nonEdit" value="0543327345" name="phone_number" id="inputPhoneNumber" disabled/></td>
+                            <td><input class="nonEdit" value="0543327345" name="phone_number" id="inputPhoneNumber"
+                                    disabled /></td>
                         </tr>
                         <tr>
                             <td class="row_head">City:</td>
-                            <td><input class="nonEdit" value="Nofit" name="city" id="inputCity" disabled/></td>
+                            <td><input class="nonEdit" value="Nofit" name="city" id="inputCity" disabled /></td>
                         </tr>
                         <tr>
                             <td class="row_head">Street:</td>
-                            <td><input class="nonEdit" value="Gilboa" name="street" id="inputStreet" disabled/></td>
+                            <td><input class="nonEdit" value="Gilboa" name="street" id="inputStreet" disabled /></td>
                         </tr>
                         <tr>
                             <td class="row_head">Apt. Number:</td>
-                            <td><input class="nonEdit" value="60" name="aprtNum" id="inputAprtNum" disabled/></td>
+                            <td><input class="nonEdit" value="60" name="aprtNum" id="inputAprtNum" disabled /></td>
                         </tr>
                         <tr>
                             <td class="row_head">Zipcode:</td>
-                            <td><input class="nonEdit" value="60" name="zipcode" id="inputZipCode" disabled/></td>
+                            <td><input class="nonEdit" value="60" name="zipcode" id="inputZipCode" disabled /></td>
                         </tr>
                     </table>
                     <input type="button" class="upButton" id="updateDetails" value="Update Details"
-                           onclick="editForm()">
-                    <input type="button" class="upButton" id="submitUpdate" value="Submit Update"
-                           onclick="submitForm()" hidden>
+                        onclick="editForm()">
+                    <input type="button" class="upButton" id="submitUpdate" value="Submit Update" onclick="submitForm()"
+                        hidden>
                 </div>
             </div>
 
@@ -123,43 +126,44 @@
                 <hr style="color: #ad948c">
                 <div class="tabcontent_grid_container">
                     <div class="info_container">
-                    <table>
-                        <tr>
-                            <td class="row_head">
-                                Credit Card:
-                            </td>
-                            <td>
-                                <input type="text" id="inputCreditCard" value="4580-1234-1234-1234" class="nonEdit" disabled>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="row_head">
-                                Expiration Date:
-                            </td>
-                            <td>
-                                <input type="text" value="03/25" id="inputExpirationDate" class="nonEdit" disabled>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="row_head">
-                                CVV:
-                            </td>
-                            <td>
-                                <input type="text" value="547" id="inputCVV" class="nonEdit" disabled>
-                            </td>
-                        </tr>
-                    </table>
+                        <table>
+                            <tr>
+                                <td class="row_head">
+                                    Credit Card:
+                                </td>
+                                <td>
+                                    <input type="text" id="inputCreditCard" value="4580-1234-1234-1234" class="nonEdit"
+                                        disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="row_head">
+                                    Expiration Date:
+                                </td>
+                                <td>
+                                    <input type="text" value="03/25" id="inputExpirationDate" class="nonEdit" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="row_head">
+                                    CVV:
+                                </td>
+                                <td>
+                                    <input type="text" value="547" id="inputCVV" class="nonEdit" disabled>
+                                </td>
+                            </tr>
+                        </table>
                         <input type="button" class="upButton" id="updateCardInfo" value="Update"
-                               onclick="editCardInfo()">
+                            onclick="editCardInfo()">
                         <input type="button" class="upButton" id="submitCardInfo" value="Submit Update"
-                               onclick="submitCardInfo()" hidden>
+                            onclick="submitCardInfo()" hidden>
                     </div>
                 </div>
             </div>
 
             <div id="My_Orders" class="tabcontent" style="display: none">
                 <h3>My orders</h3>
-                <hr >
+                <hr>
                 <div class="tabcontent_grid_container">
                     <div class="info_container">
                         <table>
@@ -183,30 +187,30 @@
                             </tr>
                         </table>
                     </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!------------------------------------------- footer ------------------------------------------->
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                <svg class="bi" width="30" height="24">
-                    <use xlink:href="#bootstrap" />
-                </svg>
-            </a>
-            <span class="text-muted">&copy; 2021 Michal Pilates</span>
-        </div>
-        <div class="social-wrap">
-            <div><a class="text-muted" href="https://www.facebook.com/">
-                    <img src="images/facebook.svg" alt="" width="30" height="24">
-                </a></div>
-            <div><a class="text-muted" href="https://www.instagram.com/">
-                    <img src="images/instagram.svg" alt="" width="30" height="24">
-                </a></div>
-            <div><a class="text-muted" href="https://www.youtube.com/">
-                    <img src="images/youtube.svg" alt="" width="30" height="24">
-                </a></div>
-        </div>
-    </footer>
-    <!------------------------------------------- end footer ------------------------------------------->
+        <!------------------------------------------- footer ------------------------------------------->
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+                <span class="text-muted">&copy; 2021 Michal Pilates</span>
+            </div>
+            <div class="social-wrap">
+                <div><a class="text-muted" href="https://www.facebook.com/">
+                        <img src="images/facebook.svg" alt="" width="30" height="24">
+                    </a></div>
+                <div><a class="text-muted" href="https://www.instagram.com/">
+                        <img src="images/instagram.svg" alt="" width="30" height="24">
+                    </a></div>
+                <div><a class="text-muted" href="https://www.youtube.com/">
+                        <img src="images/youtube.svg" alt="" width="30" height="24">
+                    </a></div>
+            </div>
+        </footer>
+        <!------------------------------------------- end footer ------------------------------------------->

@@ -20,7 +20,7 @@ function openTab(evt, id) {
 }
 
 
-function editForm(){
+function editForm() {
   arr = [
     document.getElementById("inputFullName"),
     document.getElementById("inputEmail"),
@@ -38,7 +38,7 @@ function editForm(){
   document.getElementById("submitUpdate").hidden = false;
 }
 
-function submitForm(){
+function submitForm() {
   arr = [
     document.getElementById("inputFullName"),
     document.getElementById("inputEmail"),
@@ -57,7 +57,7 @@ function submitForm(){
 }
 
 
-function editCardInfo(){
+function editCardInfo() {
   arr = [
     document.getElementById("inputCreditCard"),
     document.getElementById("inputExpirationDate"),
@@ -71,7 +71,7 @@ function editCardInfo(){
   document.getElementById("submitCardInfo").hidden = false;
 }
 
-function submitCardInfo(){
+function submitCardInfo() {
   arr = [
     document.getElementById("inputCreditCard"),
     document.getElementById("inputExpirationDate"),
