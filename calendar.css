@@ -111,3 +111,21 @@
 /* .calendar .day-column .day-hours .event .event-title {}
 
 .calendar .day-column .day-hours .event .event-description {} */
+
+.header {
+    animation: fadeIn linear 7s;
+    -webkit-animation: fadeIn linear 7s;
+    -moz-animation: fadeIn linear 7s;
+    -o-animation: fadeIn linear 7s;
+    -ms-animation: fadeIn linear 7s;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
