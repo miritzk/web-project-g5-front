@@ -20,6 +20,7 @@ function stopmotionloop() {
         }
         else {
             i = 0;
+            stopmotionloop();
         }
     }, 1500)
 }
