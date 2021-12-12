@@ -68,7 +68,7 @@
     text-align: left;
     display: grid;
     grid-gap: 10px;
-} 
+}
 
 .inputBox {
     padding: 5px;
@@ -94,14 +94,15 @@
     grid-area: send_btn;
     text-align: center;
 }
+
 @media (max-width: 800px) {
-  .contact_grid {
-        grid-template-areas: 
-        "contact_header"
-        "address"
-        "phone"
-        "email"
-        "form"
-        "map"
+    .contact_grid {
+        grid-template-areas:
+            "contact_header"
+            "address"
+            "phone"
+            "email"
+            "form"
+            "map"
     }
 }

@@ -1,17 +1,3 @@
-// function check_fullname() {
-//     if (document.getElementById('fname').value.match(letters)) {
-//         // document.getElementById('message').style.color = 'green';
-//         // document.getElementById('message').innerHTML = 'Matching password';
-//         document.getElementById('confirm_pay_btn').disabled = false;
-//     }
-//     else {
-//       document.getElementById('message').style.color = 'red';
-//       document.getElementById('message').innerHTML = 'Password does not match';
-//       document.getElementById('confirm_pay_btn').disabled = true;
-//     }
-//   }
-
-
 function allLetter() {
     // debugger;
     var lettersAndWhiteSpace = /^[a-zA-Z\s]*$/;
@@ -24,32 +10,32 @@ function allLetter() {
     const cardNum = document.getElementById("ccnum");
     const cvv = document.getElementById("cvv");
 
-    if (!fname.value.match(lettersAndWhiteSpace) ) {
+    if (!fname.value.match(lettersAndWhiteSpace)) {
         alert("Fill in alphabet letters only in Full Name");
         return false;
-    }else if (!cname.value.match(lettersAndWhiteSpace) || cname.value.length < 3) {
+    } else if (!cname.value.match(lettersAndWhiteSpace) || cname.value.length < 3) {
         alert("Fill in alphabet letters only in Card Name");
         return false;
     } else if (!email.checkValidity() || !email.value.match(emailRegex)) {
         alert(" Invalid email address");
         return false;
-    } else if (!expyear.value.match(numbers) || parseInt(expyear.value)<moment().year()) {
+    } else if (!expyear.value.match(numbers) || parseInt(expyear.value) < moment().year()) {
         alert("Invalid expiry year");
         return false;
     }
-    else if(!cardNum.value.match(numbers) || cardNum.value.length!==16){
+    else if (!cardNum.value.match(numbers) || cardNum.value.length !== 16) {
         alert("Invalid card number");
         return false;
     }
-    else if (!cvv.value.match(numbers) || cvv.value.length!==3){
+    else if (!cvv.value.match(numbers) || cvv.value.length !== 3) {
         alert("Invalid cvv");
         return false;
     }
-    else if(zip.value.length!==5 || !zip.value.match(numbers)){
+    else if (zip.value.length !== 5 || !zip.value.match(numbers)) {
         alert("Invalid zip code");
         return false;
     }
-    else if (!city.value.match(letters) || city.value.length<3){
+    else if (!city.value.match(letters) || city.value.length < 3) {
         alert("Invalid city");
         return false;
     }

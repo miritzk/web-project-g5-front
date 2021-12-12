@@ -18,7 +18,7 @@ const events = [
     {
         id: "1",
         title: mat_pilates,
-        date: moment().startOf('week').add(1,'day').format("DD/MM/YYYY"),
+        date: moment().startOf('week').add(1, 'day').format("DD/MM/YYYY"),
         start: '08:00',
         description: "",
         duration: class_duration,
@@ -27,7 +27,7 @@ const events = [
     {
         id: "1",
         title: mat_pilates,
-        date: moment().startOf('week').add(2,'day').format("DD/MM/YYYY"),
+        date: moment().startOf('week').add(2, 'day').format("DD/MM/YYYY"),
         start: '08:00',
         description: "",
         duration: class_duration,
@@ -36,7 +36,7 @@ const events = [
     {
         id: "1",
         title: mat_pilates,
-        date: moment().startOf('week').add(3,'day').format("DD/MM/YYYY"),
+        date: moment().startOf('week').add(3, 'day').format("DD/MM/YYYY"),
         start: '08:00',
         description: "",
         duration: class_duration,
@@ -45,7 +45,7 @@ const events = [
     {
         id: "1",
         title: mat_pilates,
-        date: moment().startOf('week').add(4,'day').format("DD/MM/YYYY"),
+        date: moment().startOf('week').add(4, 'day').format("DD/MM/YYYY"),
         start: '08:00',
         description: "",
         duration: class_duration,
@@ -54,7 +54,7 @@ const events = [
     {
         id: "2",
         title: classic_pilates,
-        date: moment().startOf('week').add(2,'day').format("DD/MM/YYYY"),
+        date: moment().startOf('week').add(2, 'day').format("DD/MM/YYYY"),
         start: '09:00',
         description: "",
         duration: class_duration,
@@ -63,7 +63,7 @@ const events = [
     {
         id: "2",
         title: classic_pilates,
-        date: moment().startOf('week').add(3,'day').format("DD/MM/YYYY"),
+        date: moment().startOf('week').add(3, 'day').format("DD/MM/YYYY"),
         start: '09:00',
         description: "",
         duration: class_duration,
@@ -72,7 +72,7 @@ const events = [
     {
         id: "2",
         title: classic_pilates,
-        date: moment().startOf('week').add(4,'day').format("DD/MM/YYYY"),
+        date: moment().startOf('week').add(4, 'day').format("DD/MM/YYYY"),
         start: '09:00',
         description: "",
         duration: class_duration,
@@ -81,7 +81,7 @@ const events = [
     {
         id: "2",
         title: classic_pilates,
-        date: moment().startOf('week').add(5,'day').format("DD/MM/YYYY"),
+        date: moment().startOf('week').add(5, 'day').format("DD/MM/YYYY"),
         start: '09:00',
         description: "",
         duration: class_duration,
@@ -90,7 +90,7 @@ const events = [
     {
         id: "3",
         title: reformer_pilates,
-        date: moment().startOf('week').add(1,'day').format("DD/MM/YYYY"),
+        date: moment().startOf('week').add(1, 'day').format("DD/MM/YYYY"),
         start: '10:00',
         description: "",
         duration: class_duration,
@@ -99,7 +99,7 @@ const events = [
     {
         id: "3",
         title: reformer_pilates,
-        date: moment().startOf('week').add(2,'day').format("DD/MM/YYYY"),
+        date: moment().startOf('week').add(2, 'day').format("DD/MM/YYYY"),
         start: '10:00',
         description: "",
         duration: class_duration,
@@ -108,7 +108,7 @@ const events = [
     {
         id: "3",
         title: reformer_pilates,
-        date: moment().startOf('week').add(3,'day').format("DD/MM/YYYY"),
+        date: moment().startOf('week').add(3, 'day').format("DD/MM/YYYY"),
         start: '10:00',
         description: "",
         duration: class_duration,
